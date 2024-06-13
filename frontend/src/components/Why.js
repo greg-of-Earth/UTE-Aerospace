@@ -1,5 +1,5 @@
 import React from 'react';
-import './why_ute_aerospace.css'; // Ensure the file path is correct
+import './Why.css'; // Ensure the file path is correct
 
 /**
  * Component: WhyUteAerospace
