@@ -1,0 +1,50 @@
+.testimonials-container {
+  font-family: "Inter", sans-serif;
+  max-width: 1200px; /* Limit the maximum width */
+  margin: 0 auto; /* Centering the container */
+  padding: 50px 85px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.testimonials-container h2 {
+  color: #000;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Inter;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates three columns */
+  gap: 85px; /* Space between the grid items */
+}
+
+.testimonial {
+  background-color: #f4f4f4; /* Light gray background */
+  border: 1px solid #ccc; /* Border for each testimonial */
+
+  overflow: hidden; /* Ensures no overflow outside the border */
+}
+
+.testimonial-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+
+  padding-bottom: 20px;
+}
+
+.testimonial-image {
+  width: 100%; /* Full width of the testimonial block */
+  height: 300px; /* Fixed height */
+  background-size: cover; /* Cover the area of the container */
+  background-position: center center; /* Center the image horizontally and vertically */
+  margin-bottom: 10px; /* Space below the image */
+}
+
