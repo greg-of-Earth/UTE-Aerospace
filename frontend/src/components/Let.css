@@ -1,0 +1,79 @@
+.let-container {
+    text-align: center;
+    max-width: 90%;
+    margin: 20px auto;
+}
+  
+.let-content {
+    text-align: left;
+    background-color: white;
+    padding: 40px;
+    transform: skew(-20deg); /* Apply a skew transformation to create a parallelogram shape */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+  
+.let-container h2 {
+    color: #000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Inter', sans-serif;
+    font-size: 64px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+  
+.let-content ul {
+    list-style: none; /* Removes default list styling */
+    padding: 0;
+    margin: 0;
+    transform: skew(20deg); /* Counter-skew to normalize the text inside the skewed container */
+}
+  
+.let-content li {
+    color: #333;
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    font-style: italic;
+    padding-left: 1.5em;
+    text-indent: -1.5em; /* Properly aligns the dash with the text */
+    background: none;
+    position: relative;
+}
+  
+
+
+.let-content button {
+    background-color: #095ef8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: underline;
+    font-style: italic;
+    border-radius: 4px;
+    transform: skew(20deg); /* Counter-skew to normalize the button inside the skewed container */
+    display: block;
+    margin-left: auto; /* Aligns the button to the right */
+    margin-top: 10px;
+}
+  
+.let-content button:hover {
+    background-color: #004494;
+}
+
+
+.line2{
+
+    margin-left: -20px;
+}
+
+.line3{
+
+    margin-left: -40px;
+}
+
+
