@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <main>
         {/* Other content */}
-        <video src={whatVideo} style={{width: '100%'}}/>
+        <video src={whatVideo} style={{width: '100%', margin: '0px'}} autoPlay loop muted/>
         <Let/>
         <WhyUteAerospace />
         <Testimonials />
