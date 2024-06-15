@@ -54,9 +54,19 @@
     position: absolute;
     list-style: none;
     padding: 5px;
-    margin: auto;
-    margin-top: 2px;
-    background-color: lightgrey;
+    margin: 0px;
+    margin-top: 7px;
+    background-color: white;
     border-radius: 5%; 
     z-index: 1; 
+    box-shadow: 10px 10px 10px;
+    border: solid;
+}
+
+.nav-list *:hover {
+    border: inset;
+}
+
+.dropdown-menu * {
+    padding: inherit;
 }

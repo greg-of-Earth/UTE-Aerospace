@@ -32,15 +32,12 @@ const Home = () => {
 
   return (
     <main>
-        {/* Other content */}
         <figure id='vid_div' style={{width: '100%', margin: '0px', padding: '0px'}}> 
           <video id='what_vid' src={whatVideo} autoPlay muted style={{width: '100%', margin: 'auto'}} />
 
-          
           <figcaption className='overlay'> 
             <Link to='/Model1' > Click Here </Link>
           </figcaption>
-          
         </figure>
 
         <Let/>
