@@ -105,7 +105,7 @@ const Header = () => {
                 </li>
           </ul>
       </nav>
-      <hr style={{width: '100%', color: 'black'}}/>
+      <hr style={{width: '100%', color: 'black', margin: '0px', padding:  '0px', border: 'solid'}}/>
     </header>
   );
 };

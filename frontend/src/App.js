@@ -1,11 +1,11 @@
 import './App.css';
 
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Model1 from './pages/Model1';
 
 import Home from './pages/Home';
-// Updated path
 
 function About() {
   return <h1>About Page</h1>;
@@ -20,6 +20,7 @@ const App = () =>   {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path='/Model1' element={<Model1 />} />
         </Routes>
       <Footer />
     </Router>
