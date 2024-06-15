@@ -8,7 +8,7 @@
     text-align: left;
     background-color: white;
     padding: 40px;
-    transform: skew(-20deg); /* Apply a skew transformation to create a parallelogram shape */
+    transform: skew(-20deg);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
@@ -24,10 +24,10 @@
 }
   
 .let-content ul {
-    list-style: none; /* Removes default list styling */
+    list-style: none;
     padding: 0;
     margin: 0;
-    transform: skew(20deg); /* Counter-skew to normalize the text inside the skewed container */
+    transform: skew(20deg);
 }
   
 .let-content li {
@@ -38,13 +38,10 @@
     margin-bottom: 16px;
     font-style: italic;
     padding-left: 1.5em;
-    text-indent: -1.5em; /* Properly aligns the dash with the text */
-    background: none;
+    text-indent: -1.5em;
     position: relative;
 }
   
-
-
 .let-content button {
     background-color: #095ef8;
     color: white;
@@ -55,9 +52,9 @@
     text-decoration: underline;
     font-style: italic;
     border-radius: 4px;
-    transform: skew(20deg); /* Counter-skew to normalize the button inside the skewed container */
+    transform: skew(20deg);
     display: block;
-    margin-left: auto; /* Aligns the button to the right */
+    margin-left: auto;
     margin-top: 10px;
 }
   
@@ -65,15 +62,50 @@
     background-color: #004494;
 }
 
-
-.line2{
-
+.line2 {
     margin-left: -20px;
 }
 
-.line3{
-
+.line3 {
     margin-left: -40px;
 }
 
+/* Media Queries for Responsive Adjustments */
+@media (max-width: 992px) {
+    .let-container h2 {
+        font-size: 48px;
+        margin-top: 50px;
+    }
 
+    .let-content {
+        padding: 20px;
+    }
+
+    .let-content li {
+        font-size: 22px;
+    }
+
+    .let-content button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .let-container h2 {
+        font-size: 36px;
+        margin-top: 30px;
+    }
+
+    .let-content li {
+        font-size: 18px;
+    }
+
+    .let-content ul, .let-content button {
+        transform: none; /* Remove skewing on smaller screens for better readability */
+    }
+
+    .line2, .line3 {
+        margin-left: 0; /* Normalize indentation on smaller screens */
+    }
+}

@@ -1,50 +1,68 @@
 .testimonials-container {
   font-family: "Inter", sans-serif;
-  max-width: 1200px; /* Limit the maximum width */
-  margin: 0 auto; /* Centering the container */
-  padding: 50px 85px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px; /* Adjusted padding for smaller screens */
   padding-bottom: 100px;
   text-align: center;
 }
 
 .testimonials-container h2 {
   color: #000;
-  text-align: center;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: Inter;
-  font-size: 64px;
-  font-style: normal;
+  font-size: 36px; /* Adjust font size for smaller devices */
   font-weight: 600;
-  line-height: normal;
 }
 
 .testimonials-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Creates three columns */
-  gap: 85px; /* Space between the grid items */
+  grid-template-columns: repeat(3, 1fr); /* Original setting for large screens */
+  gap: 30px; /* Adjusted gap for smaller screens */
 }
 
 .testimonial {
-  background-color: #f4f4f4; /* Light gray background */
-  border: 1px solid #ccc; /* Border for each testimonial */
-
-  overflow: hidden; /* Ensures no overflow outside the border */
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  overflow: hidden;
 }
 
 .testimonial-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
-
+  gap: 20px; /* Smaller gap */
   padding-bottom: 20px;
 }
 
 .testimonial-image {
-  width: 100%; /* Full width of the testimonial block */
-  height: 300px; /* Fixed height */
-  background-size: cover; /* Cover the area of the container */
-  background-position: center center; /* Center the image horizontally and vertically */
-  margin-bottom: 10px; /* Space below the image */
+  width: 100%;
+  height: 200px; /* Adjusted height for smaller devices */
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 10px;
 }
 
+/* Media Queries for Responsive Adjustments */
+@media (max-width: 992px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
+  }
+
+  .testimonials-container h2 {
+    font-size: 24px; /* Smaller font size for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr; /* One column for mobile devices */
+  }
+
+  .testimonials-container {
+    padding: 20px 10px; /* Reduced padding for smaller screens */
+  }
+
+  .testimonial-image {
+    height: 150px; /* Further reduced height for mobile devices */
+  }
+}
