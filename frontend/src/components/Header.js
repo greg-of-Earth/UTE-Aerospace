@@ -14,10 +14,12 @@ const Header = () => {
     
     // dropdown toggle function
     const toggleDropdown = (dropdown) => {
-        setDropdowns({
-            ...dropdowns,
-            [dropdown]: !dropdowns[dropdown],
-        });
+        closeDropdowns();
+        setDropdowns(prevState => ({
+            ...prevState,
+            [dropdown]: !prevState[dropdown],
+        }));
+
     };
 
     // close dropdowns when not hovering 
@@ -26,8 +28,8 @@ const Header = () => {
             who: false,
             what: false,
         });
-    }
 
+    }
 
 
   return (
@@ -37,15 +39,17 @@ const Header = () => {
             <NavLink to="/" className="nav-logo" id="home-page" >
             <img src={logo} alt="Home" style={{ maxWidth: "20%"}}/>UTE Aerospace
             </NavLink>
+
+            
             <ul className="nav-list">
                 <li className="nav-item"
-                onMouseOver={() => toggleDropdown('who')} onMouseLeave= {closeDropdowns}> 
+                onClick={() => toggleDropdown('who')} > 
                     <span className="nav-link" id="who">
                         Who We Are  |    
                     </span>
                     {dropdowns.who && (
-                        <ul className="dropdown-menu">
-                            <li>
+                        <ul className="dropdown-menu" onMouseLeave= {closeDropdowns}>
+                            <li id="leader">
                                 <NavLink to="/leadership" className="dropdown-link">
                                     Leadership
                                 </NavLink>
@@ -69,12 +73,12 @@ const Header = () => {
                     )}
                 
                 </li>
-                <li className="nav-item" onMouseEnter = {() => toggleDropdown('what')} onMouseLeave={closeDropdowns}>
+                <li className="nav-item" onClick = {() => toggleDropdown('what')} >
                     <span className="nav-link" id="what">
                         What We Do  |   
                     </span>
                     {dropdowns.what && (
-                        <ul className="dropdown-menu">
+                        <ul className="dropdown-menu" onMouseLeave={closeDropdowns}>
                             <li>
                                 <NavLink to="/model1" className="dropdown-link">
                                     Model 1
@@ -100,12 +104,13 @@ const Header = () => {
                 </li>
                 <li className="nav-item">
                     <NavLink to="/news" className="nav-list">
-                        News
+                        News  |
                     </NavLink>
                 </li>
           </ul>
+
       </nav>
-      <hr style={{width: '100%', color: 'black', margin: '0px', padding:  '0px', border: 'solid'}}/>
+ 
     </header>
   );
 };
