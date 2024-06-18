@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
-import { IoClose, IoMenu } from "react-icons/io5";
+import { Link, NavLink } from "react-router-dom";
 import "./Header.css"
 import logo from '../assets/utelogo.png';
 
@@ -32,20 +31,28 @@ const Header = () => {
     }
 
 
-  return (
-    <header className="header">
-      <nav className="nav container">
-         
-            <NavLink to="/" className="nav-logo" id="home-page" >
-            <img src={logo} alt="Home" style={{ maxWidth: "20%"}}/>UTE Aerospace
-            </NavLink>
+    const [menuOpen, setMenuOpen] = useState(false);
 
-            
-            <ul className="nav-list">
+
+  return (
+    <header className="header" >
+      <nav className="nav container" >
+            <Link to="/" className="nav-logo" id="home-page" >
+            <img src={logo} alt="Home" style={{ maxWidth: "20%"}}/>UTE Aerospace
+            </Link>
+            <div className="menu" onClick={() => {
+                setMenuOpen(!menuOpen);
+            }}>
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+            <ul className={menuOpen ? "open" : ""} id="unordered" >
                 <li className="nav-item"
                 onClick={() => toggleDropdown('who')} > 
                     <span className="nav-link" id="who">
-                        Who We Are  |    
+                        Who We Are    
                     </span>
                     {dropdowns.who && (
                         <ul className="dropdown-menu" onMouseLeave= {closeDropdowns}>
@@ -65,7 +72,7 @@ const Header = () => {
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to="/contact" className="dropdown-link">
+                                <NavLink to="/contact" className="dropdown-link" >
                                     Contact Us
                                 </NavLink>
                             </li>
@@ -75,7 +82,7 @@ const Header = () => {
                 </li>
                 <li className="nav-item" onClick = {() => toggleDropdown('what')} >
                     <span className="nav-link" id="what">
-                        What We Do  |   
+                        What We Do
                     </span>
                     {dropdowns.what && (
                         <ul className="dropdown-menu" onMouseLeave={closeDropdowns}>
@@ -98,13 +105,13 @@ const Header = () => {
                     )}
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/contact" className="nav-list">
-                        Careers  |
+                    <NavLink to="/contact" className="nav-list" style={{color: 'black'}}>
+                        Careers
                     </NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/news" className="nav-list">
-                        News  |
+                    <NavLink to="/news" className="nav-list" style={{color: 'black'}}>
+                        News
                     </NavLink>
                 </li>
           </ul>
