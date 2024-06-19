@@ -48,12 +48,12 @@ const Header = () => {
                 <span></span>
 
             </div>
-            <ul className={menuOpen ? "open" : ""} id="unordered" >
+            <ul className={menuOpen ? "open" : "unordered"} id="closed">
                 <li className="nav-item"
                 onClick={() => toggleDropdown('who')} > 
-                    <span className="nav-link" id="who">
+                    <p className="nav-link" id="who">
                         Who We Are    
-                    </span>
+                    </p>
                     {dropdowns.who && (
                         <ul className="dropdown-menu" onMouseLeave= {closeDropdowns}>
                             <li id="leader">
@@ -81,9 +81,9 @@ const Header = () => {
                 
                 </li>
                 <li className="nav-item" onClick = {() => toggleDropdown('what')} >
-                    <span className="nav-link" id="what">
+                    <p className="nav-link" id="what">
                         What We Do
-                    </span>
+                    </p>
                     {dropdowns.what && (
                         <ul className="dropdown-menu" onMouseLeave={closeDropdowns}>
                             <li>
@@ -106,12 +106,12 @@ const Header = () => {
                 </li>
                 <li className="nav-item">
                     <NavLink to="/contact" className="nav-list" style={{color: 'black'}}>
-                        Careers
+                        <p>Careers</p>
                     </NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/news" className="nav-list" style={{color: 'black'}}>
-                        News
+                    <NavLink to="/news" className="nav-list" style={{color: 'black', width: '100%'}}>
+                        <p>News</p>
                     </NavLink>
                 </li>
           </ul>
