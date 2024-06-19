@@ -1,0 +1,30 @@
+.leader-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+}
+
+#head h1 {
+    text-align: center;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.leader-card {
+    display: flex;
+    align-items: center; 
+    align-self: center;
+    box-shadow: 15px 5px; 
+    font-size: large;
+}
+
+.leader-image {
+    overflow: hidden;
+    padding: 5px;
+    border: solid black
+}
+
+.caption {
+    margin-left: 25px;
+    flex: 1;
+}
