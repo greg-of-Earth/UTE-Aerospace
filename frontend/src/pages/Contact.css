@@ -1,0 +1,56 @@
+
+ #contact{
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: none; 
+    padding: 0;
+    text-align: center;
+    font: 60pt bolder;
+ }
+
+ img{
+    width: 100%;
+    position: relative;
+ }
+
+ @media(max-width:480px){
+    img{
+        max-width: 480px;
+    }
+    #contact{
+        position: absolute;
+        top: 0; 
+        left: 20%; 
+        transform: translate(-0%, -0%);
+        color: white;
+        background-color: none; 
+        padding: 0;
+        text-align: center;
+        font: 30pt bolder;
+     }
+ }
+
+ #description{
+    text-align: center;
+    font-size: 30pt;
+ }
+
+ table{
+    background-color: rgb(69, 122, 187);
+    width: 80%;
+    align-self: center;
+    border-collapse: collapse;
+    margin: 20px auto;
+    border-radius: 10px;
+ }
+
+.request{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-content: center;
+    margin: 100px;
+}
