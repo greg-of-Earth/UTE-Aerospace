@@ -19,7 +19,7 @@ const Contact = () => {
             </header>
             <div id="description">
                 <h2>We are eager to connect with you. </h2>
-                <table>
+                <table id='contact-table'>
                     <tr>
                         <th>Department</th>
                         <th className='right'>Contact</th>
