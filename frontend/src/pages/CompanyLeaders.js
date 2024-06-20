@@ -18,7 +18,7 @@ const CompanyLeaders = () => {
               <h2>Daniel Mayes</h2>
               <span style={{display: 'block'}}>Owner/Manager</span>
               <span style={{display: 'block'}}>daniel@uteaerospace.com</span>
-              <Link className='bio-link' to='/Leaders'><br></br>Read Bio</Link>
+              <Link className='bio-link' to='/leaders'><br></br>Read Bio</Link>
             </figcaption>
           </figure>
 

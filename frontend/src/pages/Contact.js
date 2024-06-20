@@ -1,13 +1,14 @@
 import React from 'react'
 import './Contact.css'; // Import your CSS file if needed
 import Form from '../components/Form';
+import contact from '../assets/contact.png'
 
 
 const Contact = () => {
     return ( 
         <>
             <header>
-                <img src='../contact.png' alt="image of input output devices"></img>
+                <img src={contact} alt="Contact header"></img>
                 <a id="contact" href='.contact-form'>Contact Us</a>
             </header>
             <div id="description">
