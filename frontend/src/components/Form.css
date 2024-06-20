@@ -1,0 +1,24 @@
+form {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+}
+label {
+    margin-top: 10px;
+}
+input[type="text"], textarea {
+    padding: 8px;
+    margin-top: 10px;
+    border: 5px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+textarea {
+    resize: vertical;
+    height: 100px; 
+}
+
+#message{
+    grid-column: span 2;
+}
