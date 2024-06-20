@@ -1,5 +1,5 @@
-import React from 'react';
-import './ProfileCard.css'; // Import the CSS file
+
+import './ProfileCard.css'; 
 import no_image from '../assets/no_image.png';
 
 function ProfileCard() {
