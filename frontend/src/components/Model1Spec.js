@@ -77,11 +77,11 @@ function Model1Spec() {
             </tr>
             {/* Adding the additional rows for complete operations per day */}
             <tr className="centered-row">
-              <td colspan="5">30 trips per day or 300 acres covered per 12 hour day at 60 mph (minimum speed)</td>
+              <td colSpan="5">30 trips per day or 300 acres covered per 12 hour day at 60 mph (minimum speed)</td>
              
             </tr>
             <tr className="centered-row">
-            <td colspan="5"> 1 trip every 14 minutes if no transportation time is involved.<br />514 acres covered per 12 hour day Maximum.</td>
+            <td colSpan="5"> 1 trip every 14 minutes if no transportation time is involved.<br />514 acres covered per 12 hour day Maximum.</td>
             </tr>
 
           </tbody>
