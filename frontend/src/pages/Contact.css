@@ -11,9 +11,18 @@
     font: 60pt bolder;
  }
 
+ table, td, th {
+   border: none;
+ }
+
  img{
     width: 100%;
     position: relative;
+ }
+
+ .right {
+   text-align: right;
+   margin: auto;
  }
 
  @media(max-width:480px){

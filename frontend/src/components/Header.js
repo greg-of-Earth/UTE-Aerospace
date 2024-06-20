@@ -105,7 +105,7 @@ const Header = () => {
                     )}
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/contact" className="nav-list" style={{color: 'black'}}>
+                    <NavLink to="/careers" className="nav-list" style={{color: 'black'}}>
                         <p>Careers</p>
                     </NavLink>
                 </li>

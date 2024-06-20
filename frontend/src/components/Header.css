@@ -45,6 +45,8 @@
 .unordered {
     display: flex;
     flex-direction: row;
+    margin: auto;
+    overflow: hidden;
 }
 
 
