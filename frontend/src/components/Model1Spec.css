@@ -1,8 +1,8 @@
 .container {
-    display: grid;
-    grid-template-columns: 3fr 2fr; /* Adjust the ratio based on your content */
-    gap: 20px;
-  }
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Adjust the ratio based on your content */
+  gap: 20px;
+}
   
   .text-content p {
     font-size: 22px; /* Set font size to 22px */

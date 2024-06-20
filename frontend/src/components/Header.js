@@ -36,7 +36,7 @@ const Header = () => {
 
   return (
     <header className="header" >
-      <nav className="nav container" >
+      <nav className="nav" >
             <Link to="/" className="nav-logo" id="home-page" >
             <img src={logo} alt="Home" style={{ maxWidth: "20%"}}/>UTE Aerospace
             </Link>
