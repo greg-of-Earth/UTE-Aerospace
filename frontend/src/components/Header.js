@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import "./Header.css"
+import headerStyles from "./Header.module.css";
 import logo from '../assets/utelogo.png';
 
 
@@ -35,12 +35,12 @@ const Header = () => {
 
 
   return (
-    <header className="header" >
-      <nav className="nav container" >
-            <Link to="/" className="nav-logo" id="home-page" >
+    <header className={headerStyles.header} >
+      <nav className={headerStyles.nav}>
+            <Link to="/" className={headerStyles['nav-logo']} id={headerStyles['home-page']} >
             <img src={logo} alt="Home" style={{ maxWidth: "20%"}}/>UTE Aerospace
             </Link>
-            <div className="menu" onClick={() => {
+            <div className={headerStyles.menu} onClick={() => {
                 setMenuOpen(!menuOpen);
             }}>
                 <span></span>
@@ -48,31 +48,31 @@ const Header = () => {
                 <span></span>
 
             </div>
-            <ul className={menuOpen ? "open" : "unordered"} id="closed">
-                <li className="nav-item"
+            <ul className={menuOpen ? headerStyles.open : headerStyles.unordered} id={headerStyles['closed']}>
+                <li className={headerStyles['nav-item']}
                 onClick={() => toggleDropdown('who')} > 
-                    <p className="nav-link" id="who">
+                    <p className={headerStyles['nav-link']} id={headerStyles['who']}>
                         Who We Are    
                     </p>
                     {dropdowns.who && (
-                        <ul className="dropdown-menu" onMouseLeave= {closeDropdowns}>
+                        <ul className={headerStyles['dropdown-menu']} onMouseLeave= {closeDropdowns}>
                             <li id="leader">
-                                <NavLink to="/leadership" className="dropdown-link">
+                                <NavLink to="/leadership" className={headerStyles['dropdown-link']}>
                                     Leadership
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to="/team" className="dropdown-link">
+                                <NavLink to="/team" className={headerStyles['dropdown-link']}>
                                     Team Members
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to="/investors" className="dropdown-link">
+                                <NavLink to="/investors" className={headerStyles['dropdown-link']}>
                                     Investor Relations
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to="/contact" className="dropdown-link" >
+                                <NavLink to="/contact" className={headerStyles['dropdown-link']} >
                                     Contact Us
                                 </NavLink>
                             </li>
@@ -80,37 +80,37 @@ const Header = () => {
                     )}
                 
                 </li>
-                <li className="nav-item" onClick = {() => toggleDropdown('what')} >
-                    <p className="nav-link" id="what">
+                <li className={headerStyles['nav-item']} onClick = {() => toggleDropdown('what')} >
+                    <p className={headerStyles['nav-link']} id="what">
                         What We Do
                     </p>
                     {dropdowns.what && (
-                        <ul className="dropdown-menu" onMouseLeave={closeDropdowns}>
+                        <ul className={headerStyles['dropdown-menu']} onMouseLeave={closeDropdowns}>
                             <li>
-                                <NavLink to="/model1" className="dropdown-link">
+                                <NavLink to="/model1" className={headerStyles['dropdown-link']}>
                                     Model 1
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to="/baseStations" className="dropdown-link">
+                                <NavLink to="/baseStations" className={headerStyles['dropdown-link']}>
                                     Base Stations
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to="/payloads" className="dropdown-link">
+                                <NavLink to="/payloads" className={headerStyles['dropdown-link']}>
                                     Payloads
                                 </NavLink>
                             </li>
                         </ul>
                     )}
                 </li>
-                <li className="nav-item">
-                    <NavLink to="/contact" className="nav-list" style={{color: 'black'}}>
+                <li className={headerStyles['nav-item']}>
+                    <NavLink to="/careers" className={headerStyles['nav-list']} style={{color: 'black'}}>
                         <p>Careers</p>
                     </NavLink>
                 </li>
-                <li className="nav-item">
-                    <NavLink to="/news" className="nav-list" style={{color: 'black', width: '100%'}}>
+                <li className={headerStyles['nav-item']}>
+                    <NavLink to="/news" className={headerStyles['nav-list']} style={{color: 'black', width: '100%'}}>
                         <p>News</p>
                     </NavLink>
                 </li>

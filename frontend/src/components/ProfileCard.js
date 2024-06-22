@@ -1,10 +1,10 @@
-import React from 'react';
-import './ProfileCard.css'; // Import the CSS file
+
+import profileStyles from './ProfileCard.module.css'; 
 import no_image from '../assets/no_image.png';
 
 function ProfileCard() {
   return (
-    <div className="profile-card">
+    <div className={profileStyles['profile-card']}>
       <header>Daniel Mayes</header>
       <article>
         <figure>
@@ -12,12 +12,12 @@ function ProfileCard() {
           
           <button 
             onClick={() => window.open("https://www.linkedin.com/in/your-linkedin-id", "_blank")}
-            className="linkedin-button">
+            className={profileStyles['linkedin-button']}>
             LinkedIn
           </button>
         </figure>
         
-        <div className="content">
+        <div className={profileStyles['content']}>
           <figcaption>Owner/Manager</figcaption>
           <p>Daniel Mayes has served in multiple foreign policy positions both in the U.S. and abroad...</p>
           <p>Loving flying is akin to embracing the freedom of the skies...</p>

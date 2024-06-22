@@ -3,6 +3,7 @@ import model1SpecStyles from "./Model1Spec.module.css"; // Ensure you have the C
 
 function Model1Spec() {
   return (
+
     <div className={model1SpecStyles.container}>
       <aside className={model1SpecStyles.textContent}>
         <p>

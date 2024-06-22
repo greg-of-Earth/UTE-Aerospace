@@ -43,8 +43,9 @@
 }
 
 .unordered {
-    display: flex;
-    flex-direction: row;
+    display: inline-flex;
+    margin-right: 15px;
+    overflow: hidden;
 }
 
 

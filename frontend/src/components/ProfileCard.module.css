@@ -1,14 +1,5 @@
 /* General setup for the entire page */
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Full viewport height */
-    background: #e0e0e0; /* Light grey background */
-    margin: 0; /* Removes default margin */
-    padding: 0; /* Removes default padding */
-    font-family: 'Arial', sans-serif;
-  }
+
   
   /* Main card styling */
   .profile-card {
