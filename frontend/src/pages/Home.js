@@ -3,7 +3,7 @@ import WhyUteAerospace from '../components/Why'
 import whatVideo from '../assets/what_Video.mp4'
 import Let from '../components/Let'
 import React, { useEffect } from 'react';
-import './Home.css'; // Import your CSS file if needed
+import homeStyles from'./Home.module.css'; // Import your CSS file if needed
 import { Link } from 'react-router-dom';
 
 const Home = () => {
@@ -30,21 +30,21 @@ const Home = () => {
         };
     }, []);
 
-  return (
-    <main>
-        <figure id='vid_div' style={{width: '100%', margin: '0px', padding: '0px'}}> 
-          <video id='what_vid' src={whatVideo} autoPlay muted style={{width: '100%', margin: 'auto'}} />
+    return (
+        <main>
+            <figure className={homeStyles.videoContainer} id={homeStyles.videoContainer}> 
+              <video className={homeStyles.video} id={homeStyles.video} src={whatVideo} autoPlay muted />
+              <figcaption className={homeStyles.overlay} id={homeStyles.overlay}>
+                <Link to='/Model1' className={homeStyles.link} id={homeStyles.link}>Click Here</Link>
+              </figcaption>
+            </figure>
 
-          <figcaption className='overlay'> 
-            <Link to='/Model1' > Click Here </Link>
-          </figcaption>
-        </figure>
-
-        <Let/>
-        <WhyUteAerospace />
-        <Testimonials />
-    </main>
-  );
+            <Let/>
+            <WhyUteAerospace />
+            <Testimonials />
+        </main>
+    );
 };
+
 
 export default Home
