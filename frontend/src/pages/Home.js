@@ -1,7 +1,7 @@
-import Testimonials from '../components/Testimonials';
+// import Testimonials from '../components/Testimonials';
 import WhyUteAerospace from '../components/Why' 
 import whatVideo from '../assets/what_Video.mp4'
-import Let from '../components/Let'
+// import Let from '../components/Let'
 import React, { useEffect } from 'react';
 import homeStyles from'./Home.module.css'; // Import your CSS file if needed
 import { Link } from 'react-router-dom';
@@ -39,9 +39,9 @@ const Home = () => {
               </figcaption>
             </figure>
 
-            <Let/>
+            {/* <Let/> */}
             <WhyUteAerospace />
-            <Testimonials />
+            {/* <Testimonials /> */}
         </main>
     );
 };
