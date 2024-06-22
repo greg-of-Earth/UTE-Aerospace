@@ -1,0 +1,64 @@
+.footer {
+  font-family: 'Inter', sans-serif;
+  background-color: white;
+  color: #333;
+  padding: 50px 50px; /* Adjust padding as needed */
+  padding-bottom: 130px;
+  font-size: 16px;
+  border-top: 5px solid black; /* Adjusted for visual from the image */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto; /* This will push the footer to the bottom */
+}
+
+.footer-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+ 
+}
+
+.footer-info, .footer-links {
+  display: flex;
+  align-items: center;
+}
+
+.footer-links {
+  display: flex;
+  gap: 10px; /* Maintains spacing between links and separators */
+  align-items: center;
+  
+ 
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #007BFF;
+}
+
+.footer-copy {
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  padding-top: 35px; /* Space above the copyright text */
+}
+
+
+@media (max-width: 768px) {
+  .footer-content {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-info, .footer-links {
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+}
