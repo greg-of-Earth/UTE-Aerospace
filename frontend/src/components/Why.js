@@ -1,5 +1,5 @@
 import React from 'react';
-import './Why.css'; // Ensure the file path is correct
+import styles from './Why.module.css'; // Ensure the file path is correct
 
 /**
  * Component: WhyUteAerospace
@@ -15,9 +15,9 @@ import './Why.css'; // Ensure the file path is correct
  */
 function WhyUteAerospace() {
   return (
-    <div className="why-ute-aerospace-container">
+    <div className={styles['why-ute-aerospace-container']}>
       <h2>Why Ute Aerospace?</h2>
-      <div className="why-ute-aerospace">
+      <div className={styles['why-ute-aerospace']}>
         <p>
           Ute Aerospace is dedicated to building and enriching the Engineer of the
           Future. Led by former NASA and Rocketdyne engineers with over 65 years
