@@ -8,8 +8,8 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
     useEffect(() => {
-        const video = document.getElementById("what_vid");
-        const overlay = document.querySelector(".overlay");
+        const video = document.getElementById("video-element");
+        const overlay = document.getElementById('overlay-element');
 
         if (video && overlay) {
             video.addEventListener('ended', () => {
@@ -33,8 +33,8 @@ const Home = () => {
     return (
         <main>
             <figure className={homeStyles.videoContainer} id={homeStyles.videoContainer}> 
-              <video className={homeStyles.video} id={homeStyles.video} src={whatVideo} autoPlay muted />
-              <figcaption className={homeStyles.overlay} id={homeStyles.overlay}>
+              <video className={homeStyles.video} id= 'video-element' src={whatVideo} autoPlay muted />
+              <figcaption className={homeStyles.overlay} id='overlay-element'>
                 <Link to='/Model1' className={homeStyles.link} id={homeStyles.link}>Click Here</Link>
               </figcaption>
             </figure>
