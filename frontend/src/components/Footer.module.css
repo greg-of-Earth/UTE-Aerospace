@@ -1,64 +1,83 @@
+/* Footer.module.css */
+
 .footer {
-  font-family: 'Inter', sans-serif;
-  background-color: white;
-  color: #333;
-  padding: 50px 50px; /* Adjust padding as needed */
-  padding-bottom: 130px;
-  font-size: 16px;
-  border-top: 5px solid black; /* Adjusted for visual from the image */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: auto; /* This will push the footer to the bottom */
+  background-color: #FFFFFF; /* Assuming a white background; adjust if different */
+  padding: 60px;
+  padding-bottom: 150px;
+  border-top: 5px solid #000000; /* Black top border */
+  font-family: Inter, sans-serif;
 }
 
-.footer-content {
-  width: 100%;
+.footerContent {
   display: flex;
   justify-content: space-between;
-
- 
-}
-
-.footer-info, .footer-links {
-  display: flex;
   align-items: center;
 }
 
-.footer-links {
+.footerInfo {
+  color: #000000; /* black color for text */
+  font-size: 16px;
+  font-weight: 500; /* Medium font weight */
+}
+
+.footerLinks {
   display: flex;
-  gap: 10px; /* Maintains spacing between links and separators */
-  align-items: center;
-  
- 
+  gap: 10px;
 }
 
-.footer-links a {
-  text-decoration: none;
-  color: #333;
-  transition: color 0.3s;
+.footerLinks a {
+  color: #000000; /* black color for links */
+  font-size: 16px;
+  font-weight: 500; /* Medium font weight */
+  text-decoration: none; /* No underline */
 }
 
-.footer-links a:hover {
-  color: #007BFF;
+.footerLinks span {
+  color: #000000; /* black color for separator */
+  font-size: 16px;
+  font-weight: 500;
 }
 
-.footer-copy {
+.footerCopy {
+  color: #000000; /* black color for text */
   font-size: 14px;
+  font-weight: 500; /* Medium font weight */
   text-align: center;
-  width: 100%;
-  padding-top: 35px; /* Space above the copyright text */
+  padding-top: 33px; /* Space between content and copyright text */
 }
 
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .footer {
+    padding: 15px;
+  }
+  .footerInfo, .footerLinks a, .footerLinks span {
+    font-size: 14px;
+  }
+}
 
 @media (max-width: 768px) {
-  .footer-content {
-      flex-direction: column;
-      align-items: center;
+  .footerContent {
+    flex-direction: column;
+    align-items: flex-start;
   }
+  .footerLinks {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  .footerLinks a, .footerLinks span {
+    font-size: 12px;
+  }
+  .footerCopy {
+    text-align: left;
+    padding-top: 5px;
+  }
+}
 
-  .footer-info, .footer-links {
-      justify-content: center;
-      flex-wrap: wrap;
-  }
+
+.parent-container {
+  height: auto; /* or a specific height large enough to contain all children */
+  min-height: 100vh; /* Minimum height to at least cover the viewport height */
 }
