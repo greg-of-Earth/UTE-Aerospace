@@ -21,47 +21,46 @@ const Contact = () => {
             <div id={contactStyles.description}>
                 <h2>We are eager to connect with you. </h2>
                 <table id={contactStyles['contact-table']}>
-                    <tr>
-                        <th>Department</th>
-                        <th className={contactStyles.right}>Contact</th>
-                    </tr>
-                    <tr>
-                        <td className={contactStyles.left}>Investors</td>
-                        <td className={contactStyles.right}>
-                            <a href={`mailto:${investorEmail}?subject=${encodeURIComponent("Investment Inquiry")}&body=${encodeURIComponent("I would like to learn more about investing in UTE Aerospace.")}`}>{investorEmail}</a>
+                    <thead>
+                        <tr>
+                            <th>Department</th>
+                            <th className={contactStyles.right}>Contact</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td className={contactStyles.left}>Investors</td>
+                            <td className={contactStyles.right}>
+                                <a href={`mailto:${investorEmail}?subject=${encodeURIComponent("Investment Inquiry")}&body=${encodeURIComponent("I would like to learn more about investing in UTE Aerospace.")}`}>{investorEmail}</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td className={contactStyles.left}>Human Resources</td>
+                            <td className={contactStyles.right}>
+                                <a href={`mailto:${hrEmail}?subject=${encodeURIComponent("Investment Inquiry")}&body=${encodeURIComponent("I would like to speak with a Human Resources specialist.")}`}>{hrEmail}</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td className={contactStyles.left}>IT & Website</td>
+                            <td className={contactStyles.right}><a href={`mailto:${itEmail}?subject=${encodeURIComponent("Investment Inquiry")}&body=${encodeURIComponent("I would like to speak with a IT specialist.")}`}>{itEmail}</a></td>
+                        </tr>
+                        <tr>
+                            <td id={contactStyles.left}>Customer Inquiries</td>
+                            <td className={contactStyles.right}><a href={`mailto:${customerEmail}?subject=${encodeURIComponent("Investment Inquiry")}&body=${encodeURIComponent("I would like to speak with a Customer Service specialist.")}`}>{customerEmail}</a></td>
+                        </tr>
+                        <tr>
+                            <td id={contactStyles.left}>Phone number</td>
+                            <td className={contactStyles.right}>
+                                <a href={`tel:${phone}`}>{phone}</a>
                         </td>
-                    </tr>
-                    <tr>
-                        <td className={contactStyles.left}>Human Resources</td>
-                        <td className={contactStyles.right}>
-                            <a href={`mailto:${hrEmail}?subject=${encodeURIComponent("Investment Inquiry")}&body=${encodeURIComponent("I would like to speak with a Human Resources specialist.")}`}>{hrEmail}</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td className={contactStyles.left}>IT & Website</td>
-                        <td className={contactStyles.right}><a href={`mailto:${itEmail}?subject=${encodeURIComponent("Investment Inquiry")}&body=${encodeURIComponent("I would like to speak with a IT specialist.")}`}>{itEmail}</a></td>
-                    </tr>
-                    <tr>
-                        <td id={contactStyles.left}>Customer Inquiries</td>
-                        <td className={contactStyles.right}><a href={`mailto:${customerEmail}?subject=${encodeURIComponent("Investment Inquiry")}&body=${encodeURIComponent("I would like to speak with a Customer Service specialist.")}`}>{customerEmail}</a></td>
-                    </tr>
-                    <tr>
-                        <td id={contactStyles.left}>Phone number</td>
-                        <td className={contactStyles.right}>
-                            <a href={`tel:${phone}`}>{phone}</a>
-                    </td>
-                    </tr>
+                        </tr>
+                    </tbody>
+                    
                 </table>
 
             </div>
-            {/* <div class={contactStyles.request}>
-                <p style={{font:'18pt'}}><h4 style={{font:'20pt bolder', margin:'0'}}>Request More Information</h4></p>
 
-                <Form id='contact-form'/>
-
-            </div>
-     */}
-            <p style={{font:'18pt'}}><h4 style={{font:'20pt bolder', margin:'10px'}}>Request More Information</h4></p>
+            <h4 style={{font:'20pt bolder', margin:'10px'}}>Request More Information</h4>
             <Form id='contact-form'/>
         </>
     )
