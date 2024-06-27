@@ -1,74 +1,96 @@
+#contact{
+   position: absolute;
+   top: 50%; 
+   left: 50%; 
+   transform: translate(-50%, -50%);
+   color: white;
+   background-color: none; 
+   padding: 0;
+   text-align: center;
+   font: 60pt bolder;
+}
 
- #contact{
-    position: absolute;
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%);
-    color: white;
-    background-color: none; 
-    padding: 0;
-    text-align: center;
-    font: 60pt bolder;
- }
+#contact-table, #contact-table td {
+  border: none;
+}
 
- #contact-table, #contact-table td {
-   border: none;
- }
+#contact-table, #contact-table th {
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  background-color: rgb(69, 122, 187);
+  width: 80%;
+  align-self: center;
+  border-collapse: collapse;
+  margin: 20px auto;
+  border-radius: 10px;
+}
 
- #contact-table, #contact-table th {
-   border-right: none;
-   border-left: none;
-   border-top: none;
-   background-color: rgb(69, 122, 187);
-   width: 80%;
-   align-self: center;
-   border-collapse: collapse;
-   margin: 20px auto;
-   border-radius: 10px;
- }
+img{
+   width: 100%;
+   position: relative;
+}
 
- img{
-    width: 100%;
-    position: relative;
- }
-
- .right {
-   text-align: right;
-   margin: auto;
- }
-
+.right {
+  text-align: right;
+  margin: auto;
+}
 
 
 
- #description{
-    text-align: center;
-    font-size: 30pt;
- }
+
+#description{
+   text-align: center;
+   font-size: 30pt;
+}
 
 
 
 .request{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    align-content: center;
-    margin: 100px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr;
+   align-content: center;
+   margin: 100px;
 }
 
 
 @media(max-width:480px){
-   img{
-       max-width: 480px;
+  img{
+      max-width: 480px;
+  }
+  #contact{
+      position: absolute;
+      top: 0; 
+      left: 20%; 
+      transform: translate(-0%, -0%);
+      color: white;
+      background-color: none; 
+      padding: 0;
+      text-align: center;
+      font: 30pt bolder;
    }
-   #contact{
-       position: absolute;
-       top: 0; 
-       left: 20%; 
-       transform: translate(-0%, -0%);
-       color: white;
-       background-color: none; 
-       padding: 0;
-       text-align: center;
-       font: 30pt bolder;
+   #contact-table, #contact-table td {
+      border: none;
     }
+    
+    #contact-table, #contact-table th {
+      border-right: none;
+      border-left: none;
+      border-top: none;
+      background-color: rgb(69, 122, 187);
+      width: auto;
+      align-self: left;
+      border-collapse: collapse;
+      margin: 0px auto;
+      border-radius: 10px;
+      font-size: 16pt;
+    }
+
+    .request{
+      display: flex;
+      flex-direction: column;
+    }
+    
 }
+

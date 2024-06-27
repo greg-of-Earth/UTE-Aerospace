@@ -22,3 +22,11 @@ textarea {
 #message{
     grid-column: span 2;
 }
+
+@media(max-width:480px){
+    form{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }    
+}

@@ -1,4 +1,5 @@
 
+
 import contactStyles from './Contact.module.css'; // Import your CSS file if needed
 import Form from '../components/Form';
 import contact from '../assets/contact.png'
@@ -53,13 +54,15 @@ const Contact = () => {
                 </table>
 
             </div>
-            <div class={contactStyles.request}>
-                <p style={{font:'18pt'}}><h4 style={{font:'20pt bolder', margin:'0'}}>Request More Information</h4><br/>Please fill out the information  to set up a detailed consultation session with our knowledgeable experts. This will allow us to better understand your needs and offer tailored solutions.</p>
+            {/* <div class={contactStyles.request}>
+                <p style={{font:'18pt'}}><h4 style={{font:'20pt bolder', margin:'0'}}>Request More Information</h4></p>
 
                 <Form id='contact-form'/>
 
             </div>
-    
+     */}
+            <p style={{font:'18pt'}}><h4 style={{font:'20pt bolder', margin:'10px'}}>Request More Information</h4></p>
+            <Form id='contact-form'/>
         </>
     )
 }
