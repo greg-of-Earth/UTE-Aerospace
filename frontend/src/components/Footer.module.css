@@ -6,6 +6,7 @@
   padding-bottom: 50px;
   border-top: 5px solid #000000; /* Black top border */
   font-family: Inter, sans-serif;
+  position: sticky;
 }
 
 .footerContent {

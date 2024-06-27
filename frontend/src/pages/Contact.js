@@ -54,13 +54,9 @@ const Contact = () => {
                                 <a href={`tel:${phone}`}>{phone}</a>
                         </td>
                         </tr>
-                    </tbody>
-                    
+                    </tbody>    
                 </table>
-
             </div>
-
-            <h4 style={{font:'20pt bolder', margin:'10px'}}>Request More Information</h4>
             <Form id='contact-form'/>
         </>
     )
