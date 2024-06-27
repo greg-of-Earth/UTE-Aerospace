@@ -1,15 +1,14 @@
-
 import profileStyles from './ProfileCard.module.css'; 
-import no_image from '../assets/no_image.png';
 
-function ProfileCard() {
+function ProfileCard({ profile }) {
   return (
-    <div className={profileStyles['profile-card']}>
-      <header>Daniel Mayes</header>
-      <article>
+    <section className={profileStyles['profile-card']}>
+      <h2>{profile.title}</h2>
+      <div className={profileStyles.figArticle}>
         <figure>
-          <img src={no_image} alt="Daniel Mayes" />
-          
+        <h3>{profile.name}</h3>
+          <img src={profile.image} alt={profile.name} />
+        
           <button 
             onClick={() => window.open("https://www.linkedin.com/in/your-linkedin-id", "_blank")}
             className={profileStyles['linkedin-button']}>
@@ -17,14 +16,16 @@ function ProfileCard() {
           </button>
         </figure>
         
-        <div className={profileStyles['content']}>
-          <figcaption>Owner/Manager</figcaption>
-          <p>Daniel Mayes has served in multiple foreign policy positions both in the U.S. and abroad...</p>
-          <p>Loving flying is akin to embracing the freedom of the skies...</p>
-          <p>Daniel finished a Bachelor's degree major in Artificial Intelligence from Massachusetts Institute of Technology...</p>
-        </div>
-      </article>
-    </div>
+        <article className={profileStyles['content']}>
+
+          
+          {profile.bio.split('\n').map((line, index) => ( 
+            <p key={index}>{line}</p>
+          ))}
+
+        </article>
+      </div>
+    </section>
   );
 }
 
