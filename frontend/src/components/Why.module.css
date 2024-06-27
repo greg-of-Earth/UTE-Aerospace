@@ -8,13 +8,13 @@
   text-align: left;
   background-color: white;
   padding: 20px;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: -10px 10px 30px 0px rgba(0, 0, 0, 0.75);
   border-radius: 8px;
 }
 
 .why-ute-aerospace-container h2 {
   color: #000;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.75);
   font-family: 'Inter', sans-serif;
   font-size: 64px; /* Large size for desktops */
   font-weight: 600;
