@@ -17,7 +17,7 @@ function WhyUteAerospace() {
   return (
     <div className={styles['why-ute-aerospace-container']}>
       <h2>Why Ute Aerospace?</h2>
-      <div className={styles['why-ute-aerospace']}>
+      <article className={styles['why-ute-aerospace']}>
         <p>
           Ute Aerospace is dedicated to building and enriching the Engineer of the
           Future. Led by former NASA and Rocketdyne engineers with over 65 years
@@ -25,13 +25,13 @@ function WhyUteAerospace() {
           growth and innovation. At Ute Aerospace, we foster a dynamic environment
           where cutting-edge technology meets visionary talent, enabling our team to
           pioneer advancements in aerospace engineering.
-        </p>
-        <p>
+        <br/>
+        <br/>
           Opportunities include: Aerospace, Mechanical, Software, Electrical,
           Structural, and more.
         </p>
         <button>Join Us Today!</button>
-      </div>
+      </article>
     </div>
   );
 }
