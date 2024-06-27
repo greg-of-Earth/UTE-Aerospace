@@ -8,10 +8,16 @@
    padding: 0;
    text-align: center;
    font: 60pt bolder;
+   
+}
+
+#contact-table {
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.75);
 }
 
 #contact-table, #contact-table td {
   border: none;
+  padding: 15px;
 }
 
 #contact-table, #contact-table th {
@@ -24,6 +30,7 @@
   border-collapse: collapse;
   margin: 20px auto;
   border-radius: 10px;
+  padding: 15px;
 }
 
 img{

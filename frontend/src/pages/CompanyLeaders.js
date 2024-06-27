@@ -17,7 +17,7 @@ const CompanyLeaders = () => {
         <div className={coLeaderStyles['leader-container']}>
           <figure className={coLeaderStyles['leader-card']}>
             <img className={coLeaderStyles['leader-image']} src={Dan} alt='leader' style={{
-            width: '375px', height: '350px'}}/>
+            width: '275px', height: '250px'}}/>
             <figcaption className={coLeaderStyles.caption}>
               <h2>Daniel Mayes</h2>
               <span style={{display: 'block'}}>Owner/Manager</span>
@@ -28,7 +28,7 @@ const CompanyLeaders = () => {
 
           <figure className={coLeaderStyles['leader-card']}>
             <img className="leader-image" src={Pete} alt='leader' style={{
-            width: '375px', height: '350px'}}/>
+            width: '275px', height: '250px'}}/>
             <figcaption className={coLeaderStyles.caption}>
               <h2>Pete Calderon</h2>
               <span style={{display: 'block'}}>Co-Owner/IPT Lead</span>
