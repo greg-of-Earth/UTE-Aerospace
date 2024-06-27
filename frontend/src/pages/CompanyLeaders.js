@@ -34,7 +34,6 @@ const CompanyLeaders = () => {
               <span style={{display: 'block'}}>Co-Owner/IPT Lead</span>
               <span style={{display: 'block'}}>pete@uteaerospace.com</span>
               <Link className={coLeaderStyles['bio-link']} to='/leaders/1' ><br></br>Read Bio</Link>
-            
             </figcaption>
           </figure>
         </div>

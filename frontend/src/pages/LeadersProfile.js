@@ -24,10 +24,8 @@ function LeadersProfile() {
   const { profileId } = useParams();
   const profile = profiles[profileId]
   return (
-    <>
-     
+    <>   
       {profile ? <ProfileCard profile={profile} /> : <p>Profile not found</p>} 
-    
     </>
   );
 }
