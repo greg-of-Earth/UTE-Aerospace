@@ -10,8 +10,8 @@ const CompanyLeaders = () => {
 
   return (
       <>
-        <header id='head'> 
-          <h1>Company Leadership</h1>
+        <header className={coLeaderStyles.head}>
+        <h1 className={coLeaderStyles.headerTitle}>Company Leadership</h1>
           <img src={co_leader} alt="company leadership" style={{width: '100%'}}></img>
         </header>
         <div className={coLeaderStyles['leader-container']}>
