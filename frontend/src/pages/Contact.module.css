@@ -68,8 +68,8 @@ img{
   }
   #contact{
       position: absolute;
-      top: 0; 
-      left: 20%; 
+      top: 20%; 
+      left: 25%; 
       transform: translate(-0%, -0%);
       color: white;
       background-color: none; 
@@ -79,25 +79,56 @@ img{
    }
    #contact-table, #contact-table td {
       border: none;
-    }
-    
-    #contact-table, #contact-table th {
-      border-right: none;
-      border-left: none;
-      border-top: none;
-      background-color: rgb(69, 122, 187);
-      width: auto;
-      align-self: left;
-      border-collapse: collapse;
-      margin: 0px auto;
-      border-radius: 10px;
-      font-size: 16pt;
-    }
-
-    .request{
-      display: flex;
-      flex-direction: column;
+      font-size: 10pt;
+      margin: 1/3;
     }
     
 }
 
+@media(min-width:539px) and (max-width:770px){
+  img{
+      max-width: 100%;
+  }
+  #contact{
+      position: absolute;
+      top: 30%; 
+      left: 35%; 
+      transform: translate(-0%, -0%);
+      color: white;
+      background-color: none; 
+      padding: 0;
+      text-align: center;
+      font: 30pt bolder;
+   }
+   #contact-table, #contact-table td {
+      border: none;
+      font-size: 15pt;
+      align-self: center;
+      width: 80%;
+    }    
+}
+
+@media(min-width:771px) and (max-width:1024px){
+  img{
+      max-width: 100%;
+  }
+  #contact{
+      position: absolute;
+      top: 30%; 
+      left: 35%; 
+      transform: translate(-0%, -0%);
+      color: white;
+      background-color: none; 
+      padding: 0;
+      text-align: center;
+      font: 30pt bolder;
+   }
+   #contact-table, #contact-table td {
+      border: none;
+      font-size: 25pt;
+      align-self: center;
+      width: 80%;
+    }  
+    
+    
+}
