@@ -17,14 +17,10 @@
     text-decoration: underline;
 }
 
-
-#video-element {
-    width: 100%;
-}
-
 .videoContainer {
     position: relative;
+    flex-direction: column;
     display: flex;
     margin: 0;
-    flex-direction: column;
+    
 }
