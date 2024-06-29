@@ -40,5 +40,17 @@ input[type="text"], textarea {
         display: flex;
         flex-direction: column;
         margin: 10px;
+    }
+    .contact-form{
+        margin: 15px;
+    }    
+}
+@media(min-width:481px) and (max-width:541px){
+    form{
+        display: inline-block;
+        margin: 15px;
+    }
+    .contact-form{
+        margin: 15px;
     }    
 }
