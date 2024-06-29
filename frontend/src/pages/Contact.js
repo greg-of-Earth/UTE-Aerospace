@@ -3,6 +3,8 @@
 import contactStyles from './Contact.module.css'; // Import your CSS file if needed
 import Form from '../components/Form';
 import contact from '../assets/contact.png'
+import call from '../assets/call.png'
+import email from '../assets/email.png'
 
 
 const Contact = () => {
@@ -15,8 +17,12 @@ const Contact = () => {
     return ( 
         <>
             <header>
-                <img src={contact} alt="Contact header"></img>
-                <a id={contactStyles.contact} href='#contact-form'>Contact Us</a>
+                <img id={contactStyles["contact-image"]} src={contact} alt="Contact header"></img>
+                <section className={contactStyles['top-logos']}>
+                    <a id={contactStyles.contact} href='#contact-form'>Contact Us</a>
+                    <img className={contactStyles["contact-icon"]} src={call} alt="Call icon"></img>
+                    <img className={contactStyles["contact-icon"]} src={email} alt="Email icon"></img>
+                </section>
             </header>
             <div id={contactStyles.description}>
                 <h2>We are eager to connect with you. </h2>
