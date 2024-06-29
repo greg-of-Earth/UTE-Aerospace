@@ -1,25 +1,70 @@
-import React from "react";
+import React, { useState } from "react";
 import model1SpecStyles from "./Model1Spec.module.css"; // Ensure you have the CSS file in the same folder
 
 function Model1Spec() {
+
+
+
+
+  const [activeSection, setActiveSection] = useState(null);
+
+  // Content mapping
+  const contentSections = {
+    Farmers: `Utilizes drones for precise and efficient spraying of fertilizers and pesticides. Thus, 
+    improving crop health and reducing chemical exposure. There is also no scheduling delay with the spraying services.`,
+    SurveyingAndReconnaissance: `Utilizes drones equipped with cameras and sensors to capture and transmit real-time
+     data for surveying, urban planning, and disaster response.`,
+    ForestryService: `Drones are deployed by the forestry service to create fire breaks efficiently. These unmanned
+     aerial vehicles clear strips of vegetation to prevent the spread of wildfires by acting as barriers. This technique 
+     is essential in forest management, particularly in areas prone to frequent fires, enabling quicker, and safer fire control.`,
+    PoisonControlCenter: `In emergencies involving venomous bites, a drone will be dispatched to deliver antivenom to victims 
+    located in areas that are hard to reach by traditional methods. This rapid delivery system reduces response times, potentially 
+    saving lives.`,
+    Transport: `This drone application focuses on transporting substantial loads, up to 300 pounds, to designated sites. The drones
+     are designed for vertical take-off and landing, making them ideal for delivering supplies directly to remote or difficult to
+      access areas, such as parking lots or unprepared fields.`,
+    CoastGuardOrNavy: `Drones can be employed by the Coast Guard and Navy for precision airdrops of fire retardant, which contain
+     fires on marine vessels. These drones can carry up to 30 - 55 gallons of retardant, allowing them to respond quickly to 
+     emergency situations at sea. This could potentially save vessels and lives by controlling fires before they spread.`,
+    SearchAndRescue: `Search and rescue operations employ drones equipped with thermal imaging to locate individuals by their 
+    heat signatures. Once targets are identified, these drones can also airdrop essential supplies directly to the location, providing 
+    immediate assistance in critical situations.`,
+    Military: `In military operations, drones provide dynamic ground support through aerial machine gun attacks. These drones are 
+    deployed to engage ground targets from the air, offering cover and strategic advantages without sacrificing manned aircraft. 
+    These drones can also be employed by the military for cost-effective area surveillance and tactical operations, such as deploying 
+    small bombs on specific targets such as trucks. This capability is essential for maintaining continuous monitoring and executing
+     precise strikes with minimal collateral damage.`
+  };
+  
+
+  // Function to handle clicking on a title
+  const handleTitleClick = (sectionKey) => {
+    setActiveSection(sectionKey); 
+  };
   return (
 
     <div className={model1SpecStyles.container}>
-      <aside className={model1SpecStyles.textContent}>
-        <p>
-          The use of a farm drone to spray 30 gallons minimum, will allow 10
-          acres to be sprayed at a time. The drone is designed for refueling and
-          spray replenishment of 10 minutes from landing to take off, offering a
-          rapid turnaround to support multiple missions per day. A chemical
-          dispersion rate is baselined at 3 gallons per acre, but can be
-          adjusted between 2 to 5 gallons per acre. The CONOPS for delivering
-          the fertilizer and pesticides will change based upon actual turnaround
-          speed, chemical use per acre, cruise speed, and needed repairs. The
-          following CONOPS assumes the use of two farm or ranch hands.
-        </p>
-      </aside>
+    <div>
+        <div className={model1SpecStyles.titleButtons}>
+          {Object.keys(contentSections).map(key => (
+            <button
+              key={key}
+              onClick={() => handleTitleClick(key)}
+              className={model1SpecStyles.titleButton}
+            >
+              {key.replace(/([A-Z])/g, ' $1').trim()}
+            </button>
+          ))}
+        </div>
+        <aside className={model1SpecStyles.textContent}>
+          <p>
+            {activeSection ? contentSections[activeSection] : 'Select a topic to display information.'}
+          </p>
+        </aside>
+      </div>
+      <div className={model1SpecStyles.tableContent}>
 
-      <table className={model1SpecStyles.tableContent}>
+      <table >
         <thead>
           <tr>
             <th>Description</th>
@@ -102,6 +147,7 @@ function Model1Spec() {
           </tr>
         </tbody>
       </table>
+      </div>
     </div>
   );
 }
