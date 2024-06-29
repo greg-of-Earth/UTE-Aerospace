@@ -1,38 +1,27 @@
 .leader-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, auto);
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+    margin-top: 75px;
 }
 
 .head{
-
     text-align: center;
-}
-
-.head h1 {
-   
-    font-size: 64px;
+    font-size: 24px;
     font-weight: 700;
-    text-align: center;
-  
 }
 
 .leader-card {
-    display: flex;
-    align-items: center; 
-    align-self: center;
-    box-shadow: 15px 5px; 
+    box-shadow: 5px 15px 15px 5px; 
     font-size: large;
 }
 
-.leader-image {
-    overflow: hidden;
-    padding: 5px;
-}
+
 
 .caption {
-    margin-left: 25px;
     flex: 1;
+    margin-bottom: 25px;
+    text-align: center;
 }
 
 
@@ -42,7 +31,7 @@
     .head h1 {
         font-size: 48px; 
     }
-    .leader-container {
+    /* .leader-container {
         grid-template-columns: 1fr; 
         grid-template-rows: repeat(2, auto);
     }
@@ -53,7 +42,7 @@
     }
     .caption {
         margin-left: 0; 
-    }
+    } */
 }
 
 @media (max-width: 768px) {
