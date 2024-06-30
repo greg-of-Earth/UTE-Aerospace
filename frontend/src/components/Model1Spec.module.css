@@ -1,36 +1,45 @@
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two equal columns */
-  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  border: 2px solid black;
+
 }
 
-.title-buttons {
-  display: flex;
-  flex-direction: column; /* Buttons stacked vertically */
-  margin-bottom: 10px; /* Space between buttons and text area */
+.contents {
+  flex-direction: column; 
+  margin-bottom: 10px; 
   font-size: 10px;
+  background-color: white;
+  height: 100%;
 }
 
-.title-button {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  margin: 4px 0; /* Space between buttons */
-  cursor: pointer;
-  border-radius: 5px;
+.info p {
+  border: 2px solid black;
+  padding: 2%;
+  margin: 5%;
+  box-shadow: 0px 8px 2px 4px;
+  margin-bottom: 10%;
 }
 
-.title-button:hover {
+
+
+.button:hover {
   background-color: #45a049;
 }
 
-.text-content {
-  background: #f4f4f4;
-  padding: 20px;
-  border-radius: 5px;
-  font-size: 16px;
+.buttons:active {
+  background-color: lightgrey;
+}
+
+.info {
+  font-size: 22pt;
+  box-shadow: 6px 6px 8px black;
+  /* height: 100%; */
+  background-color: lightgrey;
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .table-content {

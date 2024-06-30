@@ -8,6 +8,18 @@
   display: flex;
   flex-direction: column;
   justify-content: center; /* Center content vertically */
+  position: relative;
+}
+
+.model1Container h1 {
+
+  position: absolute;
+  top: 10%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font: 42pt bolder;
+  justify-content: center;
 }
 
 .model1-image {
