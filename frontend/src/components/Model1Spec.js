@@ -6,64 +6,79 @@ function Model1Spec() {
 
 
 
-  const [activeSection, setActiveSection] = useState(null);
+  const [activeSection, setActiveSection] = useState(0);
 
-  // Content mapping
-  const contentSections = {
-    Farmers: `Utilizes drones for precise and efficient spraying of fertilizers and pesticides. Thus, 
-    improving crop health and reducing chemical exposure. There is also no scheduling delay with the spraying services.`,
-    SurveyingAndReconnaissance: `Utilizes drones equipped with cameras and sensors to capture and transmit real-time
-     data for surveying, urban planning, and disaster response.`,
-    ForestryService: `Drones are deployed by the forestry service to create fire breaks efficiently. These unmanned
-     aerial vehicles clear strips of vegetation to prevent the spread of wildfires by acting as barriers. This technique 
-     is essential in forest management, particularly in areas prone to frequent fires, enabling quicker, and safer fire control.`,
-    PoisonControlCenter: `In emergencies involving venomous bites, a drone will be dispatched to deliver antivenom to victims 
-    located in areas that are hard to reach by traditional methods. This rapid delivery system reduces response times, potentially 
-    saving lives.`,
-    Transport: `This drone application focuses on transporting substantial loads, up to 300 pounds, to designated sites. The drones
-     are designed for vertical take-off and landing, making them ideal for delivering supplies directly to remote or difficult to
-      access areas, such as parking lots or unprepared fields.`,
-    CoastGuardOrNavy: `Drones can be employed by the Coast Guard and Navy for precision airdrops of fire retardant, which contain
-     fires on marine vessels. These drones can carry up to 30 - 55 gallons of retardant, allowing them to respond quickly to 
-     emergency situations at sea. This could potentially save vessels and lives by controlling fires before they spread.`,
-    SearchAndRescue: `Search and rescue operations employ drones equipped with thermal imaging to locate individuals by their 
-    heat signatures. Once targets are identified, these drones can also airdrop essential supplies directly to the location, providing 
-    immediate assistance in critical situations.`,
-    Military: `In military operations, drones provide dynamic ground support through aerial machine gun attacks. These drones are 
-    deployed to engage ground targets from the air, offering cover and strategic advantages without sacrificing manned aircraft. 
-    These drones can also be employed by the military for cost-effective area surveillance and tactical operations, such as deploying 
-    small bombs on specific targets such as trucks. This capability is essential for maintaining continuous monitoring and executing
-     precise strikes with minimal collateral damage.`
-  };
+  const tabs = [
+    {
+      title: 'Overview', 
+      content: ( <ul className={model1SpecStyles.descList}><p>The Model 1 is a multi-functional drone designed to be adaptable to any mission. It's foldable structure allows for easy ground transport and almost anywhere storagability. Interchangeable payloads and in-field servicablility round out the Model 1.</p></ul>), 
+    },
+    {
+      title: 'Civilian',
+      content: (
+        <ul className={model1SpecStyles.descList}>
+          <li>Farmers<p >Utilizes drones for precise and efficient spraying of fertilizers and pesticides with no scheduling delay. Thus, improving crop health and reducing chemical exposure.</p>
+          </li>
+          <li>Transport<p>This drone application focuses on transporting substantial loads, up to 300 pounds, to designated sites. The drones are designed for vertical take-off and landing, making them ideal for delivering supplies directly to remote or difficult to access areas, such as parking lots or unprepared fields.</p></li>
+        <li>Surveying/ Reconnaissance<p> Utilizes drones equipped with cameras and sensors to capture and transmit real-time data for surveying, urban planning, and disaster response.</p></li></ul>),
+    },
+    {
+      title: 'Emergency',
+      content: (<ul className={model1SpecStyles.descList}><li>Forestry<p >Drones are deployed by the forestry service to create fire breaks efficiently. These unmanned aerial vehicles clear strips of vegetation to prevent the spread of wildfires by acting as barriers. This technique is essential in forest management, particularly in areas prone to frequent fires, enabling quicker, and safer fire control.</p></li>
+        <li>PoisonControlCenter<p>In emergencies involving venomous bites, a drone will be dispatched to deliver antivenom to victims located in areas that are hard to reach by traditional methods. This rapid delivery system reduces response times, potentially saving lives by ensuring timely medical assistance.
+        </p></li>
+        
+        </ul>),
+    },
+    {
+      title: 'Military',
+      content: (<ul className={model1SpecStyles.descList}><li>Assualt<p >In military operations, drones provide dynamic ground support through aerial machine gun attacks. These drones are deployed to engage ground targets from the air, offering cover and strategic advantages without sacrificing soldiers or manned aircraft.<br/><br/>
+        These drones can also be employed by the military for cost-effective area surveillance and tactical operations. For example, deploying small bombs on specific targets such as trucks. This capability is essential for maintaining continuous monitoring and executing precise strikes with minimal collateral damage. </p></li>
+        <li>Search And Rescue<p>Search and rescue operations employ drones equipped with thermal imaging to locate individuals by their heat signatures. Once targets are identified, these drones can also airdrop essential supplies directly to the location, providing immediate assistance in critical situations. 
+        </p></li>
+        <li>Coast Guard/ Navy<p>Drones can be employed by the Coast Guard and Navy for precision airdrops of fire retardant for fire containment on marine vessels. These drones can carry up to 30 - 55 gallons of retardant, which gives the crew a chance to respond quicker to emergency situations at sea. Potentially saving vessels and lives by controlling fires before they spread.
+        </p></li>
+        
+        </ul>),
+    },
+
+  ];
+
   
-
   // Function to handle clicking on a title
-  const handleTitleClick = (sectionKey) => {
-    setActiveSection(sectionKey); 
+  const showInfo = (sectionIndx) => {
+    const buttons = document.getElementsByClassName('tab');
+    for (let i = 0; i < buttons.length; i++) {
+      buttons[i].style.backgroundColor = 'white';
+      buttons[i].style.boxShadow = '0px 0px 0px 0px';
+    }
+    setActiveSection(sectionIndx);
+    const activeBtn = buttons[sectionIndx];
+    
+    if(activeBtn) {
+      activeBtn.style.backgroundColor = 'lightgrey';
+      activeBtn.style.boxShadow = '0px 0px 0px black';
+    }
+    
   };
-  return (
 
+
+
+
+  return (
     <div className={model1SpecStyles.container}>
-    <div>
-        <div className={model1SpecStyles.titleButtons}>
-          {Object.keys(contentSections).map(key => (
-            <button
-              key={key}
-              onClick={() => handleTitleClick(key)}
-              className={model1SpecStyles.titleButton}
-            >
-              {key.replace(/([A-Z])/g, ' $1').trim()}
-            </button>
+      <section className={model1SpecStyles.contents}>
+        <div id="buttonList" className={model1SpecStyles.buttons}>
+          {tabs.map((tab, indx) => (
+            <button style={{borderBottom: 'none', width: '25%', backgroundColor: 'white', fontSize: '22pt'}} key={indx} className={`tab ${activeSection === indx ? 'active' : ''}`} onClick={() => showInfo(indx)}> {tab.title}</button>
+            
           ))}
         </div>
-        <aside className={model1SpecStyles.textContent}>
-          <p>
-            {activeSection ? contentSections[activeSection] : 'Select a topic to display information.'}
-          </p>
-        </aside>
-      </div>
-      <div className={model1SpecStyles.tableContent}>
-
+        <section className={model1SpecStyles.info}>
+          {tabs[activeSection].content}
+        </section>
+      
+      </section>
       <table >
         <thead>
           <tr>
@@ -147,9 +162,31 @@ function Model1Spec() {
           </tr>
         </tbody>
       </table>
-      </div>
     </div>
-  );
+
+    // <div className={model1SpecStyles.container}>
+    //     <div className={model1SpecStyles.titleButtons}>
+    //       {Object.keys(contentSections).map(key => (
+    //         <button
+    //           key={key}
+    //           onClick={() => handleTitleClick(key)}
+    //           className={model1SpecStyles.titleButton}
+    //         >
+    //           {key.replace(/([A-Z])/g, ' $1').trim()}
+    //         </button>
+    //       ))}
+    //     </div>
+    //     <aside className={model1SpecStyles.textContent}>
+    //       <p>
+    //         {activeSection ? contentSections[activeSection] : 'Select a topic to display information.'}
+    //       </p>
+    //     </aside>
+    //   <div className={model1SpecStyles.tableContent}>
+
+     
+  //     </div>
+  //   </div>
+ );
 }
 
 export default Model1Spec;

@@ -40,7 +40,7 @@ const Home = () => {
     return (
         <main>
             <figure className={homeStyles.videoContainer} id={homeStyles.videoContainer}> 
-              <video className={homeStyles.video} id= 'video-element' src={whatVideo}  autoPlay muted  />
+              <video className={homeStyles.video} id= 'video-element' src={whatVideo} autoPlay  muted  />
               <figcaption className={homeStyles.overlay} > 
                 <Link to='/Model1' className={homeStyles.link} id='overlay-element'><span id='overlay'>Click Here</span></Link>
             </figcaption>
