@@ -87,17 +87,7 @@ header {
   #contact-image{
       max-width: 480px;
   }
-  #contact{
-      position: absolute;
-      top: 20%; 
-      left: 25%; 
-      transform: translate(-0%, -0%);
-      color: white;
-      background-color: none; 
-      padding: 0;
-      text-align: center;
-      font: 30pt bolder;
-   }
+  
    #contact-table, #contact-table td {
       border: none;
       font-size: 10pt;
@@ -118,6 +108,26 @@ header {
       width: 10%;
       border-radius: 50%;
     }
+    .top-logos{
+      display: flex;
+      position: absolute;
+      flex-direction: column;
+      top: 50%; 
+      left: 50%; 
+      transform: translate(-50%, -50%);
+      text-align: center;
+      font: 20pt bolder;
+      justify-content: center;
+    }
+
+    .contact-icon{
+      height: 0%;
+      width: 0%;
+      visibility:collapse;
+      justify-self: center;
+      color: white;
+      padding: 10px;
+    }
     
 }
 
@@ -128,7 +138,7 @@ header {
   #contact{
       position: absolute;
       top: 30%; 
-      left: 35%; 
+      left: 20%; 
       transform: translate(-0%, -0%);
       color: white;
       background-color: none; 
@@ -143,20 +153,28 @@ header {
       width: 80%;
     }    
 
-    #call-icon{
+    .top-logos{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
       position: absolute;
-      border-radius: 50%;
-      height: 10%;
-      width: 10%;
-    
+      top: 50%; 
+      left: 50%; 
+      transform: translate(-50%, -50%);
+      text-align: center;
+      font: 42pt bolder;
+      justify-content: center;
     }
-    
-    #email-icon{
-      position: absolute;
-      height: 10%;
-      width: 10%;
-      border-radius: 50%;
+
+    .contact-icon{
+      height: 50%;
+      width: 50%;
+      justify-self: center;
+      color: white;
+      padding: 25px;
+      grid-row-start: 2;
     }
+
 }
 
 @media(min-width:771px) and (max-width:1024px){
@@ -166,7 +184,7 @@ header {
   #contact{
       position: absolute;
       top: 30%; 
-      left: 35%; 
+      left: 25%; 
       transform: translate(-0%, -0%);
       color: white;
       background-color: none; 
@@ -180,19 +198,25 @@ header {
       align-self: center;
       width: 80%;
     }  
-    #call-icon{
+    .top-logos{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
       position: absolute;
-      border-radius: 50%;
-      height: 10%;
-      width: 10%;
-    
+      top: 50%; 
+      left: 50%; 
+      transform: translate(-50%, -50%);
+      text-align: center;
+      font: 42pt bolder;
+      justify-content: center;
     }
-    
-    #email-icon{
-      position: absolute;
-      height: 10%;
-      width: 10%;
-      border-radius: 50%;
+
+    .contact-icon{
+      height: 50%;
+      width: 50%;
+      justify-self: center;
+      color: white;
+      padding: 25px;
+      grid-row-start: 2;
     }
-    
 }
