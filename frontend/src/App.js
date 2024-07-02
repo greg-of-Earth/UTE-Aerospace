@@ -9,6 +9,7 @@ import Home from './pages/Home';
 import CompanyLeaders from './pages/CompanyLeaders';
 import Contact from './pages/Contact';
 import LeadersProfile from './pages/LeadersProfile';
+import Investor from './pages/Investor';
 
 
 function About() {
@@ -28,6 +29,7 @@ const App = () =>   {
           <Route path='/leaders/:profileId' element={<LeadersProfile />} />
           <Route path='/Model1' element={<Model1 />} />
           <Route path='/Contact' element={<Contact />} />
+          <Route path='/investors' element={<Investor/>}/>
         </Routes>
       <Footer />
     </Router>

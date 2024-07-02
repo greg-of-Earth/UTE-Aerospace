@@ -1,0 +1,36 @@
+.banner {
+    height: 800px; /* Adjust based on your layout */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+  }
+  
+  .topLeft {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #1335D4;
+    font-family: Inter;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+  }
+  
+  .bottomRight {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+   
+    color: #FFFEFE;
+    text-align: center;
+    font-family: Inter;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+  }
+  
