@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import model1SpecStyles from "./Model1Spec.module.css"; // Ensure you have the CSS file in the same folder
 
+
 function Model1Spec() {
-
-
-
 
   const [activeSection, setActiveSection] = useState(0);
 
@@ -62,15 +61,23 @@ function Model1Spec() {
     
   };
 
-
-
+  useEffect(() => {
+    const buttons = document.getElementsByClassName('tab');
+    if (buttons[0]) {
+      buttons[0].style.backgroundColor = 'lightgrey';
+      buttons[0].style.boxShadow = '0px 0px 0px black';
+    }
+  }, []);
 
   return (
     <div className={model1SpecStyles.container}>
       <section className={model1SpecStyles.contents}>
         <div id="buttonList" className={model1SpecStyles.buttons}>
           {tabs.map((tab, indx) => (
-            <button style={{borderBottom: 'none', width: '25%', backgroundColor: 'white', fontSize: '22pt'}} key={indx} className={`tab ${activeSection === indx ? 'active' : ''}`} onClick={() => showInfo(indx)}> {tab.title}</button>
+          
+
+            <Link style={{borderRight: '2px solid black', borderLeft: '2px solid black', width: '25%', backgroundColor: activeSection === indx ? 'lightgrey' : 'white', fontSize: '22pt'}}
+            key={indx} className={`tab ${activeSection === indx ? 'active' : ''}`} onClick={() => showInfo(indx)}> {tab.title}</Link>
             
           ))}
         </div>

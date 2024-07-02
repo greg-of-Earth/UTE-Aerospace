@@ -21,7 +21,11 @@
   margin-bottom: 10%;
 }
 
+.buttons {
+  display: flex;
 
+  text-align: center;
+}
 
 .button:hover {
   background-color: #45a049;
@@ -52,9 +56,11 @@
 
 table {
   width: 100%;
-  border-collapse: collapse;
-  table-layout: fixed; /* Ensures consistent column widths */
+  table-layout: fixed; 
+  border: 3px inset black;
 }
+
+
 
 th, td {
   border: 1px solid black;
