@@ -15,10 +15,15 @@ header {
   justify-content: center;
 }
 
+
 #contact{
-  grid-column: 1/3;
   color: white;
+  grid-row-start: 1;
+  grid-column: span 2;
+  justify-content: center;
+  align-content: center;
 }
+
 
 .contact-icon{
   height: 50%;
@@ -65,8 +70,6 @@ header {
 }
 
 
-
-
 #description{
    text-align: center;
    font-size: 30pt;
@@ -87,7 +90,7 @@ header {
   #contact-image{
       max-width: 480px;
   }
-  
+
    #contact-table, #contact-table td {
       border: none;
       font-size: 10pt;
@@ -137,7 +140,10 @@ header {
   }
   #contact{
       position: absolute;
-      top: 30%; 
+      grid-row-start: 1;
+      grid-column: span 2;
+      align-content: center;
+      top: 20%; 
       left: 20%; 
       transform: translate(-0%, -0%);
       color: white;
@@ -145,6 +151,7 @@ header {
       padding: 0;
       text-align: center;
       font: 30pt bolder;
+      
    }
    #contact-table, #contact-table td {
       border: none;
@@ -183,7 +190,10 @@ header {
   }
   #contact{
       position: absolute;
-      top: 30%; 
+      grid-row-start: 1;
+      grid-column: span 2;
+      align-content: center;
+      top: 20%; 
       left: 25%; 
       transform: translate(-0%, -0%);
       color: white;
