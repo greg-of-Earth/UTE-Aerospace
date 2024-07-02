@@ -5,7 +5,7 @@ function ProfileCard({ profile }) {
     <section className={profileStyles['profile-card']}>
       <h2>{profile.title}</h2>
       <div className={profileStyles.figArticle}>
-        <figure>
+        <figure className='leaderFigs'>
         <h3>{profile.name}</h3>
           <img src={profile.image} alt={profile.name} />
         
