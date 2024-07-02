@@ -16,13 +16,13 @@ import styles from './Why.module.css'; // Ensure the file path is correct
 function WhyUteAerospace() {
   return (
     <div className={styles['why-ute-aerospace-container']}>
-      <h2>Why Ute Aerospace?</h2>
+      <h2>Why UTE Aerospace?</h2>
       <article className={styles['why-ute-aerospace']}>
         <p>
-          Ute Aerospace is dedicated to building and enriching the Engineer of the
+          UTE Aerospace is dedicated to building and enriching the Engineer of the
           Future. Led by former NASA and Rocketdyne engineers with over 65 years
           of combined aerospace experience, we offer unparalleled opportunities for
-          growth and innovation. At Ute Aerospace, we foster a dynamic environment
+          growth and innovation. At UTE Aerospace, we foster a dynamic environment
           where cutting-edge technology meets visionary talent, enabling our team to
           pioneer advancements in aerospace engineering.
         <br/>
