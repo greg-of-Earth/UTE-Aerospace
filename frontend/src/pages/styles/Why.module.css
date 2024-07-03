@@ -1,7 +1,8 @@
 .why-ute-aerospace-container {
   text-align: center;
   max-width: 90%;
-  margin: 20px auto;
+  margin: 5% auto;
+
 }
 
 .why-ute-aerospace {
@@ -18,7 +19,7 @@
   font-family: 'Inter', sans-serif;
   font-size: 64px; /* Large size for desktops */
   font-weight: 600;
-  margin-bottom: 30px;
+  margin-bottom: 5%;
 }
 
 .why-ute-aerospace p {

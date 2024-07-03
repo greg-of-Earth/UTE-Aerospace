@@ -1,5 +1,5 @@
 import React from 'react';
-import footerStyles from './Footer.module.css';  // Correct path assumed
+import footerStyles from './styles/Footer.module.css';  // Correct path assumed
 
 function Footer() {
   return (
