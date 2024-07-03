@@ -37,7 +37,7 @@ const Header = () => {
   return (
     <header className={headerStyles.header} >
       <nav className={headerStyles.nav}>
-            <Link to="/" className={headerStyles['nav-logo']} id={headerStyles['home-page']} >
+            <Link to="/" className={headerStyles['nav-logo']} id={headerStyles['home-page']} onClick= {closeDropdowns}>
             <img src={logo} alt="Home" style={{ maxWidth: "20%"}}/>UTE Aerospace
             </Link>
             <div className={headerStyles.menu} onClick={() => {
@@ -49,6 +49,11 @@ const Header = () => {
 
             </div>
             <ul className={menuOpen ? headerStyles.open : headerStyles.unordered} id={headerStyles['closed']}>
+                <li className={headerStyles['nav-item']}>
+                    <NavLink to="/" className={headerStyles['nav-list']} style={{color: 'black', width: '100%'}} onClick= {closeDropdowns}>
+                        <p>Home</p>
+                    </NavLink>
+                </li>
                 <li className={headerStyles['nav-item']}
                 onClick={() => toggleDropdown('who')} > 
                     <p className={headerStyles['nav-link']} id={headerStyles['who']}>
@@ -105,12 +110,12 @@ const Header = () => {
                     )}
                 </li>
                 <li className={headerStyles['nav-item']}>
-                    <NavLink to="/careers" className={headerStyles['nav-list']} style={{color: 'black'}}>
+                    <NavLink to="/careers" className={headerStyles['nav-list']} style={{color: 'black'}} onClick= {closeDropdowns}>
                         <p>Careers</p>
                     </NavLink>
                 </li>
                 <li className={headerStyles['nav-item']}>
-                    <NavLink to="/news" className={headerStyles['nav-list']} style={{color: 'black', width: '100%'}}>
+                    <NavLink to="/news" className={headerStyles['nav-list']} style={{color: 'black', width: '100%'}} onClick= {closeDropdowns}>
                         <p>News</p>
                     </NavLink>
                 </li>

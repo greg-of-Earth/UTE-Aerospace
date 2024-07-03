@@ -6,6 +6,8 @@
     background-color: transparent;
 }
 
+
+
 .nav-item:hover {
     border: inset;
 }
@@ -28,7 +30,6 @@
 
 .nav {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     font-size: x-large;
     border-bottom: 5px solid black;
@@ -85,6 +86,8 @@
     
 }
 
+
+
 nav ul li a:hover {
     color: #1b4de8;
 }
@@ -107,7 +110,7 @@ nav .menu span {
     border-radius: .2rem;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 968px) {
     nav .menu{
         display: flex;
     }
@@ -133,6 +136,8 @@ nav .menu span {
         text-align: center; 
         background-color: lightgray;
         border: thin solid black;
+        font-size: 18pt;
+        margin: auto;
     }
 
     nav ul li:hover{
@@ -141,6 +146,11 @@ nav .menu span {
 
     .dropdown-menu {
         padding: 0;
+        width: 70%;
+        margin-left: 10%;
+        font-size: 24pt;
     }
 
 }
+
+

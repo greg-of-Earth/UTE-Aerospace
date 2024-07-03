@@ -1,10 +1,8 @@
-// import Testimonials from '../components/Testimonials';
-import WhyUteAerospace from '../components/Why' 
-import whatVideo from '../assets/what_Video2.mp4'
-// import Let from '../components/Let'
 import React, { useEffect } from 'react';
-import homeStyles from'./Home.module.css'; // Import your CSS file if needed
+import homeStyles from'./Home.module.css'; 
 import { Link } from 'react-router-dom';
+import styles from './Why.module.css';
+import whatVideo from '../assets/what_Video2.mp4'
 
 const Home = () => {
     useEffect(() => {
@@ -18,8 +16,7 @@ const Home = () => {
                 text.style.color = 'white';
                 text.style.textDecoration = 'underline';
                 overlay.style.visibility = 'visible';
-                // video.style.height = '496px';
-                // video.style.objectFit = 'cover';
+                
             });
     
     
@@ -45,9 +42,27 @@ const Home = () => {
                 <Link to='/Model1' className={homeStyles.link} id='overlay-element'><span id='overlay'>Click Here</span></Link>
             </figcaption>
             </figure>
+            <div className={styles['why-ute-aerospace-container']}>
+                <h2>Why UTE Aerospace?</h2>
+                <article className={styles['why-ute-aerospace']}>
+                <p>
+                UTE Aerospace is dedicated to building and enriching the Engineer of the
+                Future. Led by former NASA and Rocketdyne engineers with over 65 years
+                of combined aerospace experience, we offer unparalleled opportunities for
+                growth and innovation. At UTE Aerospace, we foster a dynamic environment
+                where cutting-edge technology meets visionary talent, enabling our team to
+                pioneer advancements in aerospace engineering.
+                <br/>
+                <br/>
+                Opportunities include: Aerospace, Mechanical, Software, Electrical,
+                Structural, and more.
+                </p>
+                <button>Join Us Today!</button>
+            </article>
+            </div>
 
             {/* <Let/> */}
-            <WhyUteAerospace />
+            {/* <WhyUteAerospace /> */}
             {/* <Testimonials /> */}
         </main>
     );
