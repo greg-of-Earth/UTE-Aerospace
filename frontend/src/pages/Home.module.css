@@ -7,7 +7,7 @@
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
-    font-size: 96px;
+    font-size: 36pt;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     visibility: hidden;
 }
@@ -23,4 +23,16 @@
     display: flex;
     margin: 0;
     
+}
+
+@media (max-width: 968px) {
+    .overlay {
+        font-size: 24pt;
+    }
+}
+
+@media (max-width: 468px) {
+    .overlay {
+        font-size: 16pt;
+    }
 }
