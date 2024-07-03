@@ -1,4 +1,4 @@
-import formStyles from './Form.module.css';
+import formStyles from './styles/Form.module.css';
 const Form = ({ id }) => {
   return (
       <form id={id} className={formStyles['contact-form']}>

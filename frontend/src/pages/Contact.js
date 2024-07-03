@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import contactStyles from './Contact.module.css'; 
+import contactStyles from './styles/Contact.module.css'; 
 import Form from '../components/Form';
 import contact from '../assets/contact.png';
 import { ReactComponent as PhoneIcon } from '../assets/phone.svg';

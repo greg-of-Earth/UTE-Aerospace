@@ -1,6 +1,6 @@
 import co_leader from '../assets/co_leader.png';
 import { Link } from 'react-router-dom';
-import coLeaderStyles from './CompanyLeaders.module.css';
+import coLeaderStyles from './styles/CompanyLeaders.module.css';
 import Pete from '../assets/Pete.JPG';
 import Dan from '../assets/Dan.jpg';
 

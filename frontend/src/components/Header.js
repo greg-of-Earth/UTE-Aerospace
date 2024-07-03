@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import headerStyles from "./Header.module.css";
+import headerStyles from "./styles/Header.module.css";
 import logo from '../assets/utelogo.png';
 
 

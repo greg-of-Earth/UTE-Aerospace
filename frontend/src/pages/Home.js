@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import homeStyles from'./Home.module.css'; 
+import homeStyles from'./styles/Home.module.css'; 
 import { Link } from 'react-router-dom';
-import styles from './Why.module.css';
+import styles from './styles/Why.module.css';
 import whatVideo from '../assets/what_Video2.mp4'
 
 const Home = () => {
