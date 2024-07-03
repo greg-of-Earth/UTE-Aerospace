@@ -71,3 +71,25 @@
   line-height: 1.5;
   
 }
+
+@media (max-width: 480px) {
+  .profile-card figure {
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: none;
+    border: none;
+    padding: 5px;
+    margin-bottom: 3px;
+    margin-top: 40px;
+  }
+  .profile-card .content p {
+    font-size: 12pt;
+    color: black;
+    line-height: 1.5;
+    text-align: justify;
+    hyphens: auto;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}    
