@@ -1,12 +1,17 @@
-import React from 'react';
-import Model1Picture from '../components/ModelPicture';  // Correct path to your Model1 component
 import Model1Spec from '../components/Model1Spec';
+import Header from '../components/Header';
+import HeaderImg from '../components/HeaderImg'
+import HeadTitle from  '../components/HeaderTitle';
+import model1 from '../assets/model_sketch.png';
+
 
 function Model1Page() {
   return (
     <>
-     
-      <Model1Picture /> 
+     <Header>
+      <HeaderImg src = { model1 }  />
+      <HeadTitle headTitle= "Model 1" color="black"/>
+     </Header>
       <Model1Spec /> 
     </>
   );

@@ -4,6 +4,9 @@ import Form from '../components/Form';
 import contact from '../assets/contact.png';
 import { ReactComponent as PhoneIcon } from '../assets/phone.svg';
 import { ReactComponent as EmailIcon } from '../assets/email.svg';
+import Header from '../components/Header';
+import HeaderImg from '../components/HeaderImg';
+
 
 
 const Contact = () => {
@@ -28,16 +31,15 @@ const email = () => {
 
     return ( 
         <>
-            <header>
-                <img id={contactStyles["contact-image"]} src={contact} alt="Contact header"></img>
+            <Header>
+                <HeaderImg src={contact}/>
                 <section className={contactStyles['top-logos']}>
                     <a id={contactStyles.contact} href='#contact-form'>Contact Us</a>
-               
-                    <PhoneIcon id='phoneIcon' className={contactStyles["contact-icon"]} style={{backgroundColor: 'transparent'}} onClick={call} />
-                    <EmailIcon id='emailIcon' className={contactStyles["contact-icon"]} onClick={email}/>
-        
+                
+                <PhoneIcon id='phoneIcon' className={contactStyles["contact-icon"]} style={{backgroundColor: 'transparent'}} onClick={call} />
+                <EmailIcon id='emailIcon' className={contactStyles["contact-icon"]} onClick={email}/>
                 </section>
-            </header>
+            </Header>
             <div id={contactStyles.description}>
                 <h2>We are eager to connect with you. </h2>
                 <table id={contactStyles['contact-table']}>
@@ -48,32 +50,17 @@ const email = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        {/* <tr>
-                            <td className={contactStyles.left}>Investors</td>
-                            <td className={contactStyles.right}>
-                                <a href={`mailto:${investorEmail}?subject=${encodeURIComponent("Investment Inquiry")}&body=${encodeURIComponent("I would like to learn more about investing in UTE Aerospace.")}`}>{investorEmail}</a>
-                            </td>
-                        </tr> */}
+    
                         <tr>
                             <td className={contactStyles.left}>Human Resources</td>
                             <td className={contactStyles.right}>
                                 <Link to="#" onClick={email}>{hrEmail} </Link>
-
-                                {/* <a onClick={email} href={`mailto:${hrEmail}?subject=${encodeURIComponent("Investment Inquiry")}&body=${encodeURIComponent("I would like to speak with a Human Resources specialist.")}`}>{hrEmail}</a> */}
                             </td>
                         </tr>
-                        {/* <tr>
-                            <td className={contactStyles.left}>IT & Website</td>
-                            <td className={contactStyles.right}><a href={`mailto:${itEmail}?subject=${encodeURIComponent("Investment Inquiry")}&body=${encodeURIComponent("I would like to speak with a IT specialist.")}`}>{itEmail}</a></td>
-                        </tr> */}
-                        {/* <tr>
-                            <td id={contactStyles.left}>Customer Inquiries</td>
-                            <td className={contactStyles.right}><a href={`mailto:${customerEmail}?subject=${encodeURIComponent("Investment Inquiry")}&body=${encodeURIComponent("I would like to speak with a Customer Service specialist.")}`}>{customerEmail}</a></td>
-                        </tr> */}
                         <tr>
                             <td id={contactStyles.left}>Phone</td>
                             <td className={contactStyles.right}>
-                                <a href={`tel:${phone}`}>{phone}</a>
+                            <a href={`tel:${phone}`}>{phone}</a>
                         </td>
                         </tr>
                     </tbody>    

@@ -67,7 +67,7 @@ function Model1Spec() {
       buttons[0].style.backgroundColor = 'lightgrey';
       buttons[0].style.boxShadow = '0px 0px 0px black';
     }
-  }, []);
+  }, []);   
 
   return (
     <div className={model1SpecStyles.container}>
@@ -76,8 +76,8 @@ function Model1Spec() {
           {tabs.map((tab, indx) => (
           
 
-            <Link style={{borderRight: '2px solid black', borderLeft: '2px solid black', width: '25%', backgroundColor: activeSection === indx ? 'lightgrey' : 'white', fontSize: '22pt'}}
-            key={indx} className={`tab ${activeSection === indx ? 'active' : ''}`} onClick={() => showInfo(indx)}> {tab.title}</Link>
+            <Link style={{borderRight: '2px solid black', borderLeft: '2px solid black', width: '25%', backgroundColor: activeSection === indx ? 'lightgrey' : 'white'}}
+            key={indx} className={`model1SpecStyles.tab ${activeSection === indx ? 'model1SpecStyles.active' : ''}`} onClick={() => showInfo(indx)}> {tab.title}</Link>
             
           ))}
         </div>
@@ -171,28 +171,7 @@ function Model1Spec() {
       </table>
     </div>
 
-    // <div className={model1SpecStyles.container}>
-    //     <div className={model1SpecStyles.titleButtons}>
-    //       {Object.keys(contentSections).map(key => (
-    //         <button
-    //           key={key}
-    //           onClick={() => handleTitleClick(key)}
-    //           className={model1SpecStyles.titleButton}
-    //         >
-    //           {key.replace(/([A-Z])/g, ' $1').trim()}
-    //         </button>
-    //       ))}
-    //     </div>
-    //     <aside className={model1SpecStyles.textContent}>
-    //       <p>
-    //         {activeSection ? contentSections[activeSection] : 'Select a topic to display information.'}
-    //       </p>
-    //     </aside>
-    //   <div className={model1SpecStyles.tableContent}>
 
-     
-  //     </div>
-  //   </div>
  );
 }
 
