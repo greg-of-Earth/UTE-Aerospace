@@ -1,18 +1,11 @@
-header {
-  position: relative;
-}
-
 .top-logos{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(auto, auto);
   position: absolute;
   top: 50%; 
   left: 50%; 
   transform: translate(-50%, -50%);
-  text-align: center;
-  font: 42pt bolder;
-  justify-content: center;
+  font: 56pt bolder;
 }
 
 
@@ -30,9 +23,13 @@ header {
   width: 50%;
   justify-self: center;
   color: white;
-  padding: 25px;
+  padding: 25%;
 }
 
+#description {
+
+  padding: 0% 3% 0% 3%;
+}
 
 #contact-table {
   box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.75);
@@ -48,21 +45,17 @@ header {
   border-left: none;
   border-top: none;
   background-color: rgb(69, 122, 187);
-  width: 80%;
-  align-self: center;
+  font-size: 24pt;
   border-collapse: collapse;
-  margin: 20px auto;
   border-radius: 10px;
   padding: 15px;
 }
 
-#contact-image{
-   width: 100%;
-   position: relative;
-   
-   max-height: 850px;
+td {
+  font-size: 22pt;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
-
 
 .right {
   text-align: right;
@@ -70,9 +63,10 @@ header {
 }
 
 
-#description{
+h2{
    text-align: center;
-   font-size: 30pt;
+   font-size: 36pt;
+   margin-left: 5%;
 }
 
 
@@ -87,146 +81,34 @@ header {
 
 
 @media(max-width:480px){
-  #contact-image{
-      max-width: 480px;
+  h2 {
+    font-size: 22pt;
   }
 
-   #contact-table, #contact-table td {
-      border: none;
-      font-size: 10pt;
-      margin: 1/3;
-    }
+  #contact-table th {
+  font-size: 12pt;
+ }
 
-    #call-icon{
-      position: absolute;
-      border-radius: 50%;
-      height: 10%;
-      width: 10%;
-    
-    }
-    
-    #email-icon{
-      position: absolute;
-      height: 10%;
-      width: 10%;
-      border-radius: 50%;
-    }
-    .top-logos{
-      display: flex;
-      position: absolute;
-      flex-direction: column;
-      top: 50%; 
-      left: 50%; 
-      transform: translate(-50%, -50%);
-      text-align: center;
-      font: 20pt bolder;
-      justify-content: center;
-    }
-
-    .contact-icon{
-      height: 0%;
-      width: 0%;
-      visibility:collapse;
-      justify-self: center;
-      color: white;
-      padding: 10px;
-    }
-    
-}
-
-@media(min-width:539px) and (max-width:770px){
-  #contact-image{
-      max-width: 100%;
-  }
-  #contact{
-      position: absolute;
-      grid-row-start: 1;
-      grid-column: span 2;
-      align-content: center;
-      top: 20%; 
-      left: 20%; 
-      transform: translate(-0%, -0%);
-      color: white;
-      background-color: none; 
-      padding: 0;
-      text-align: center;
-      font: 30pt bolder;
-      
-   }
-   #contact-table, #contact-table td {
-      border: none;
-      font-size: 15pt;
-      align-self: center;
-      width: 80%;
-    }    
-
-    .top-logos{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      position: absolute;
-      top: 50%; 
-      left: 50%; 
-      transform: translate(-50%, -50%);
-      text-align: center;
-      font: 42pt bolder;
-      justify-content: center;
-    }
-
-    .contact-icon{
-      height: 50%;
-      width: 50%;
-      justify-self: center;
-      color: white;
-      padding: 25px;
-      grid-row-start: 2;
-    }
+ td {
+  font-size: 10pt;
+ }
 
 }
 
-@media(min-width:771px) and (max-width:1024px){
-  #contact-image{
-      max-width: 100%;
-  }
+@media (max-width:770px){
+ 
   #contact{
-      position: absolute;
-      grid-row-start: 1;
-      grid-column: span 2;
-      align-content: center;
-      top: 20%; 
-      left: 25%; 
-      transform: translate(-0%, -0%);
-      color: white;
-      background-color: none; 
-      padding: 0;
-      text-align: center;
-      font: 30pt bolder;
+       font: 36pt bolder;
    }
-   #contact-table, #contact-table td {
-      border: none;
-      font-size: 25pt;
-      align-self: center;
-      width: 80%;
-    }  
-    .top-logos{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      position: absolute;
-      top: 50%; 
-      left: 50%; 
-      transform: translate(-50%, -50%);
-      text-align: center;
-      font: 42pt bolder;
-      justify-content: center;
-    }
+    
+   .contact-icon{
+      height: 40%;
+      width: 40%;
+   }
+}
 
-    .contact-icon{
-      height: 50%;
-      width: 50%;
-      justify-self: center;
-      color: white;
-      padding: 25px;
-      grid-row-start: 2;
-    }
+@media (max-width:1024px){
+  #contact{
+    font: 36pt bolder;
+  }
 }

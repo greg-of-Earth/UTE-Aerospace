@@ -1,5 +1,5 @@
 import React from 'react';
-import './Testimonials.css';
+import './styles/Testimonials.module.css';
 import no_image from '../assets/no_image.png';
 
 /**
