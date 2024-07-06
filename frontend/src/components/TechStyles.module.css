@@ -44,3 +44,37 @@
     line-height: 1.5; /* Adjust line height for readability */
   }
   
+
+
+  /* Responsive adjustments */
+@media (max-width: 1024px) {
+  .container {
+      padding: 50px; /* Slightly reduce padding */
+  }
+
+  .headerSection {
+      font-size: 150px; /* Reduce font size */
+  }
+
+  .header, .title, .description {
+      font-size: 24px; /* Reduce font sizes in other classes */
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+      padding: 30px; /* Further reduce padding */
+  }
+
+  .headerSection {
+      font-size: 100px; /* Further reduce font size for smaller screens */
+  }
+
+  .contentSection {
+      padding: 20px; /* Reduce padding */
+  }
+
+  .header, .title, .description {
+      font-size: 20px; /* Further reduce font sizes for readability on smaller devices */
+  }
+}

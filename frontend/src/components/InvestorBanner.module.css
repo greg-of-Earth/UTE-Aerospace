@@ -34,3 +34,21 @@
     text-decoration-line: underline;
   }
   
+
+  /* Responsive adjustments */
+@media (max-width: 1024px) {
+  .topLeft, .bottomRight {
+      font-size: 48px; /* Smaller font size */
+  }
+}
+
+@media (max-width: 768px) {
+
+  .topLeft, .bottomRight {
+    font-size: 24px; /* Smaller font size */
+}
+  .banner {
+      height: 600px; /* Adjust banner height */
+  }
+  
+}
