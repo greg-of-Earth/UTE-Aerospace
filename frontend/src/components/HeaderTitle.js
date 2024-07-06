@@ -1,6 +1,4 @@
-
 import HeaderStyles from "./styles/Header.module.css";
-
 
 const HeaderTitle = ( {headTitle, color} ) => {
   return (

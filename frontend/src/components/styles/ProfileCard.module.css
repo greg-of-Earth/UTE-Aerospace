@@ -1,0 +1,95 @@
+
+.profile-card {
+  width: 80%;
+  margin: 25px auto;
+  margin-top: 10vw;
+  margin-bottom: 15vw;
+  border: 1px solid black;
+  box-shadow: 0 8px 8px rgba(0,0,0,035);
+  background-color: #E0F7FA;
+}
+
+
+  
+.profile-card h2 {
+  text-align: center;
+  padding-top: 15px;
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+  
+.figArticle {
+  display: inline-block;
+}
+
+.profile-card figure {
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  float: left;
+  border: 1px solid grey;
+  padding: 5px;
+  margin-bottom: 3px;
+  margin-top: 40px;
+}
+
+.profile-card h3 {
+  margin-top: 5px;
+}
+
+.profile-card img {
+  width: 150px; 
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #cccccc; /* Light grey border */
+  
+}
+
+
+.linkedin-button {
+  background-color: #0077b5; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  width: 200px; 
+  margin: 10px auto; 
+}
+
+
+.profile-card .content {
+  text-align: left;
+  padding: 10px;
+}
+
+
+.profile-card .content p {
+  font-size: 22px;
+  color: black;
+  line-height: 1.5;
+  
+}
+
+@media (max-width: 480px) {
+  .profile-card figure {
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: none;
+    border: none;
+    padding: 5px;
+    margin-bottom: 3px;
+    margin-top: 40px;
+  }
+  .profile-card .content p {
+    font-size: 12pt;
+    color: black;
+    line-height: 1.5;
+    text-align: justify;
+    hyphens: auto;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}    
