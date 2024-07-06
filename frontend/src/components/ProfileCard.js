@@ -1,4 +1,4 @@
-import profileStyles from './ProfileCard.module.css'; 
+import profileStyles from './styles/ProfileCard.module.css'; 
 
 function ProfileCard({ profile }) {
   return (
