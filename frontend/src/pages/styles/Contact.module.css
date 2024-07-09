@@ -80,35 +80,57 @@ h2{
 }
 
 
-@media(max-width:480px){
+@media(min-width: 768px) and (max-width: 996px){
+  .top-logos {
+    font-size: 36pt;
+  }
+
+  .contact-icon {
+    height: 40%;
+  }
+
   h2 {
-    font-size: 22pt;
+    font-size: 24pt;
+  }
+}
+
+@media(max-width:767px){
+  h2 {
+    font-size: 18pt;
   }
 
   #contact-table th {
   font-size: 12pt;
- }
-
- td {
-  font-size: 10pt;
- }
-
-}
-
-@media (max-width:770px){
- 
-  #contact{
-       font: 36pt bolder;
-   }
-    
-   .contact-icon{
-      height: 40%;
-      width: 40%;
-   }
-}
-
-@media (max-width:1024px){
-  #contact{
-    font: 36pt bolder;
   }
+
+  td {
+  font-size: 10pt;
+  }
+
+  .contact-icon {
+    display: none;
+  }
+
+  #contact {
+    font-size: 28pt;
+  }
+
 }
+
+@media(max-width:480px){
+  h2 {
+    font-size: 14pt;
+  }
+ 
+}
+
+@media(min-width: 997px) and (max-width:1024px){
+  #contact {
+    font-style: bolder;
+    font-size: 48pt;
+  }
+
+  h2{
+    font-size: 28pt;
+  }
+}  

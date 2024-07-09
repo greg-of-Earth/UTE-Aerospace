@@ -44,4 +44,10 @@
         display: flex;
         flex-direction: column;
     }
+
+    .caption {
+        padding: 10px;
+    }
+
+ 
 }

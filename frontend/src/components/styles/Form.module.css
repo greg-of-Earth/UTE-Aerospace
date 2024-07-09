@@ -5,7 +5,7 @@
     padding: 25px;
     border: 1px solid #000000;
     box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.75);
-    margin: 175px;
+    margin: 20vh;
 }
 
 
@@ -42,10 +42,11 @@ input[type="text"], textarea {
         margin: 10px;
     }
     .contact-form{
-        margin: 15px;
+        margin: 5vh;
     }    
+
 }
-@media(min-width:481px) and (max-width:541px){
+@media(min-width:481px) and (max-width:540px){
     form{
         display: inline-block;
         margin: 15px;
@@ -53,4 +54,10 @@ input[type="text"], textarea {
     .contact-form{
         margin: 15px;
     }    
+}
+
+@media(min-width: 541px) and (max-width: 996px){
+    .contact-form {
+        margin: 10vh;
+    }
 }
