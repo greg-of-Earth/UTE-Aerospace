@@ -8,7 +8,7 @@ const Form = ({ id }) => {
         const data = Object.fromEntries(formData.entries());
 
         try {
-            const response = await fetch('http://yourdomain.com/submit.php', {
+            const response = await fetch('http://localhost/submit.php', {
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json',
@@ -30,7 +30,7 @@ const Form = ({ id }) => {
             <h4 style={{font:'20pt bolder', margin:'10px'}}>Request More Information</h4>
             <input type="text" id="name" name="name" placeholder='Name' required/>
             <input type="text" id="email" name="email" placeholder='Email' required/><br/>
-            <label htmlFor="Select Reason">Select Reason For Contacting</label><br/>
+            <label htmlFor="reason">Select Reason For Contacting</label><br/>
             <select id="reason" name="reason" defaultValue='' required>
                 <option value="" disabled>Select</option>
                 <option value="Job Opportunity">Customer Questions</option>
