@@ -15,7 +15,7 @@ const CompanyLeaders = () => {
       <>
       <Header>
         <HeaderImg src={co_leader} />
-        <HeaderTitle headTitle="Company Leadership" color="white"/>
+        <HeaderTitle headTitle="Company Leadership" color="white" style={{top: '30%'}}/>
       </Header>
 
         <div className={coLeaderStyles['leader-container']}>

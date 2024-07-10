@@ -10,7 +10,7 @@ function Model1Page() {
     <>
      <Header>
       <HeaderImg src = { model1 }  />
-      <HeadTitle headTitle= "Model 1" color="black"/>
+      <HeadTitle headTitle= "Model 1" color="black" style={{ top: '10%'}}/>
      </Header>
       <Model1Spec /> 
     </>

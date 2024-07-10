@@ -60,10 +60,6 @@ const Home = () => {
                 <button>Join Us Today!</button>
             </article>
             </div>
-
-            {/* <Let/> */}
-            {/* <WhyUteAerospace /> */}
-            {/* <Testimonials /> */}
         </main>
     );
 };
