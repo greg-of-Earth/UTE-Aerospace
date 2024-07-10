@@ -1,8 +1,8 @@
 import HeaderStyles from "./styles/Header.module.css";
 
-const HeaderTitle = ( {headTitle, color} ) => {
+const HeaderTitle = ( {headTitle, color, style} ) => {
   return (
-    <h1 style={{ color}} className={HeaderStyles.title}>
+    <h1 style={{...style, color}} className={HeaderStyles.title}>
         {headTitle}
     </h1>
     
