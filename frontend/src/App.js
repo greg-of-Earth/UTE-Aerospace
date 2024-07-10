@@ -10,6 +10,7 @@ import CompanyLeaders from './pages/CompanyLeaders';
 import Contact from './pages/Contact';
 import LeadersProfile from './pages/LeadersProfile';
 import Investor from './pages/Investor';
+import UnderConstruction from './components/UnderConstruction';
 
 
 function About() {
@@ -30,6 +31,7 @@ const App = () =>   {
           <Route path='/Model1' element={<Model1 />} />
           <Route path='/Contact' element={<Contact />} />
           <Route path='/investors' element={<Investor/>}/>
+          <Route path='/team' element={<UnderConstruction/>}/>
         </Routes>
       <Footer />
     </Router>
