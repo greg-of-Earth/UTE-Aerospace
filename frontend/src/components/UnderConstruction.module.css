@@ -5,9 +5,38 @@ h1{
 }
 .timer-section{
     position: absolute;
-  top: 50%; 
+  top: 90%; 
   left: 50%; 
   transform: translate(-50%, -50%);
   font: 56pt bolder;
   color: white;
 }
+
+@media (max-width:1024px){
+    .timer-section{
+      position: absolute;
+      top: 90%; 
+      left: 50%; 
+      transform: translate(-50%, -50%);
+      font: 40pt bolder;
+      color: white;
+    }
+    
+  }
+
+  @media (max-width:440px){
+    .timer-section{
+      position: absolute;
+      top: 65%; 
+      left: 50%; 
+      transform: translate(-50%, -50%);
+      font: 20pt bolder;
+      color: white;
+    }
+    h1{
+        position: absolute;
+        font-size: 20pt;
+        color: white bolder;
+    }
+    
+  }
