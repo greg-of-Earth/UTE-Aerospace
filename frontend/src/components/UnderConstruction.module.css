@@ -1,0 +1,13 @@
+h1{
+    position: absolute;
+    font-size: 30pt;
+    color: white bolder;
+}
+.timer-section{
+    position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  font: 56pt bolder;
+  color: white;
+}
