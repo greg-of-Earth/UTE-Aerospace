@@ -1,5 +1,7 @@
 <?php
-header('Content-Type: application/json');
+header('Access-Control-Allow-Origin: *'); // This allows all origins
+header('Access-Control-Allow-Methods: POST, GET, OPTIONS'); // Specify methods allowed
+header('Access-Control-Allow-Headers: Origin, Content-Type, Accept'); // Specify headers allowed
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $name = htmlspecialchars($_POST['name']);
@@ -7,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $reason = htmlspecialchars($_POST['reason']);
     $message = htmlspecialchars($_POST['message']);
 
-    $to = 'your_email@example.com';  // Change this to your email address
+    $to = 'goodbyemeteor@gmail.com';  // Change this to your email address
     $subject = 'New Form Submission';
     $body = "You have received a new message from: $name\nEmail: $email\nReason: $reason\nMessage: $message";
     $headers = 'From: webmaster@example.com' . "\r\n";  // Change this to the appropriate From address
@@ -20,4 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 } else {
     echo json_encode(['status' => 'error', 'message' => 'Invalid request']);
 }
+
+file_put_contents('debug.txt', print_r($_POST, true));
+
 ?>
