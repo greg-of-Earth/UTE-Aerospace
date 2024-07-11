@@ -1,10 +1,12 @@
 import React, { useEffect } from 'react';
 import homeStyles from'./styles/Home.module.css'; 
-import { Link } from 'react-router-dom';
+import { Link, useNavigate} from 'react-router-dom';
 import styles from './styles/Why.module.css';
 import whatVideo from '../assets/what_Video2.mp4'
 
 const Home = () => {
+
+    const navigate = useNavigate(); // Initialize the navigate function
     useEffect(() => {
         const video = document.getElementById("video-element");
         const overlay = document.getElementById('overlay-element');
@@ -34,6 +36,10 @@ const Home = () => {
         };
     }, []);
 
+    const handleJoinUsClick = () => {
+        navigate('/team'); // Use navigate function to redirect
+    };
+
     return (
         <main>
             <figure className={homeStyles.videoContainer} id={homeStyles.videoContainer}> 
@@ -57,7 +63,7 @@ const Home = () => {
                 Opportunities include: Aerospace, Mechanical, Software, Electrical,
                 Structural, and more.
                 </p>
-                <button>Join Us Today!</button>
+                <button onClick={handleJoinUsClick}>Join Us Today!</button>
             </article>
             </div>
         </main>
