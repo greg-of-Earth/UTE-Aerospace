@@ -1,12 +1,19 @@
 import React from 'react';
 import TechStyles from './TechStyles.module.css'; // Import your CSS module
+// import HeaderTitle from './HeaderTitle';
 
 const TechnologyInnovation = () => {
   return (
+
+    <>
+      <h1>
+        Technology and Innovation at Ute Aerospace
+
+      </h1>
+ 
+
     <div className={TechStyles.container}>
-      <div className={TechStyles.headerSection}>
-        <h1 className={TechStyles.header}>Technology and Innovation at Ute Aerospace</h1>
-      </div>
+     
       <div className={TechStyles.contentSection}>
         <h2 className={TechStyles.title}>Advanced Aerospace Design</h2>
         <p className={TechStyles.description}>
@@ -21,6 +28,7 @@ const TechnologyInnovation = () => {
         </p>
       </div>
     </div>
+    </>
   );
 }
 
