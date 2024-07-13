@@ -23,20 +23,49 @@ h1{
     }
     
   }
+  @media (min-width:821px) and (max-width:920px){
+    .timer-section{
+      position: absolute;
+      top: 90%; 
+      left: 50%; 
+      transform: translate(-50%, -50%);
+      font: 35pt bolder;
+      color: white;
+    }
+    
+  }
+
+  @media (min-width:667px) and (max-width:820px){
+    .timer-section{
+      position: absolute;
+      top: 90%; 
+      left: 50%; 
+      transform: translate(-50%, -50%);
+      font: 30pt bolder;
+      color: white;
+    }
+    
+  }
 
   @media (max-width:440px){
     .timer-section{
       position: absolute;
-      top: 65%; 
+      top: 75%; 
       left: 50%; 
       transform: translate(-50%, -50%);
       font: 20pt bolder;
       color: white;
     }
-    h1{
-        position: absolute;
-        font-size: 20pt;
-        color: white bolder;
+   
+    
+  }
+  @media (min-width:441px) and (max-width:541px){
+    .timer-section{
+      position: absolute;
+      top: 75%; 
+      left: 50%; 
+      transform: translate(-50%, -50%);
+      font: 30pt bolder;
     }
     
   }
