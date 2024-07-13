@@ -66,11 +66,11 @@ const Header = () => {
                                     Leadership
                                 </NavLink>
                             </li>
-                            <li>
+                            {/* <li>
                                 <NavLink to="/team" className={navbarStyles['dropdown-link']}>
                                     Team Members
                                 </NavLink>
-                            </li>
+                            </li> */}
                             <li>
                                 <NavLink to="/investors" className={navbarStyles['dropdown-link']}>
                                     Investor Relations
@@ -101,11 +101,11 @@ const Header = () => {
                                     Mobile Stations
                                 </NavLink>
                             </li>
-                            <li>
+                            {/* <li>
                                 <NavLink to="/payloads" className={navbarStyles['dropdown-link']}>
                                     Payloads
                                 </NavLink>
-                            </li>
+                            </li> */}
                         </ul>
                     )}
                 </li>
