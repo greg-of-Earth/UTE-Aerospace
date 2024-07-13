@@ -15,9 +15,11 @@ function Investor() {
     <>
       <Header>
         <HeaderImg src={investImg} style={{ height: '75dvh'}}/>
-        
-          <HeadTitle headTitle='A Better Future..' style={{ top: '60%', left: '65%',textWrap: 'nowrap'}}/>
-          <a className={bannerStyles.bottomRight} href='#contact-form' style={{ transform: 'translate(-50%, -50%)', color: 'aliceblue'}}>Built Together </a> 
+          
+            <HeadTitle headTitle='A Better Future..' style={{top: '70%', left: '65%',  textWrap: 'nowrap'}}/>
+            <a className={bannerStyles.bottomRight} href='#contact-form' style={{top: '80%', left: '65%', color: 'aliceblue'}}>Built Together </a> 
+          
+          
       
       </Header>
       {/* <InvestorBanner />  */}
