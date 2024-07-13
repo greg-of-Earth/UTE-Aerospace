@@ -14,7 +14,7 @@ function Investor() {
   return (
     <>
       <Header>
-        <HeaderImg src={investImg} style={{ height: '75dvh'}}/>
+        <HeaderImg src={investImg} />
           
             <HeadTitle headTitle='A Better Future..' style={{top: '70%', left: '65%',  textWrap: 'nowrap'}}/>
             <a className={bannerStyles.bottomRight} href='#contact-form' style={{top: '80%', left: '65%', color: 'aliceblue'}}>Built Together </a> 
