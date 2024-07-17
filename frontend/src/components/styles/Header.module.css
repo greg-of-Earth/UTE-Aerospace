@@ -35,7 +35,7 @@
 }
 @media (min-width:821px) and (max-width:851px){
   .title {
-    font-size: 50pt; 
+    font-size: 30pt; 
   }
 
   .image {
@@ -45,7 +45,7 @@
 }
 @media (min-width:855px) and (max-width:911px){
   .title {
-    font-size: 50pt; 
+    font-size: 30pt; 
   }
 
   .image {
@@ -55,7 +55,7 @@
 }
 @media (min-width:916px) and (max-width:932px){
   .title {
-    font-size: 50pt; 
+    font-size: 30pt; 
   }
 
   .image {
@@ -65,7 +65,7 @@
 }
 @media (min-width:912px) and (max-width:916px){
   .title {
-    font-size: 50pt; 
+    font-size: 30pt; 
   }
 
   .image {
@@ -86,7 +86,7 @@
 
   @media(min-width: 541px) and (max-width: 739px) {
     .title {
-      font-size: 48px; 
+      font-size: 38px; 
     }
 
     .image {
@@ -105,7 +105,7 @@
 
   @media(min-width: 740px) and (max-width: 742px) {
     .title {
-      font-size: 48px; 
+      font-size: 30pt; 
     }
 
     .image {
@@ -116,7 +116,7 @@
 
   @media(min-width: 497px) and (max-width: 540px) {
     .title {
-      font-size: 40px; 
+      font-size: 30px; 
     }
     .image {
       height: 35vh;
@@ -137,7 +137,7 @@
 
 @media (min-width:933px) and (max-width:1025px){
   .title {
-    font-size: 60pt; 
+    font-size: 45pt; 
   }
 
   .image {

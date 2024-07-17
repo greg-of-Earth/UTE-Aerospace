@@ -54,9 +54,7 @@ return (
                             : `${timeLeft.days}d ${timeLeft.hours}h ${timeLeft.minutes}m ${timeLeft.seconds}s`
                     }
         </section>
-        
-    </Header>
-    
+    </Header> 
 )
 }
 export default UnderConstruction
