@@ -1,0 +1,6 @@
+.career {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Create two columns of equal width */
+    grid-gap: 10vw; /* Space between the cards */
+    padding: 10vw;
+}

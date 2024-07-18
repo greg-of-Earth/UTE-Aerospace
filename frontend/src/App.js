@@ -11,6 +11,7 @@ import Contact from './pages/Contact';
 import LeadersProfile from './pages/LeadersProfile';
 import Investor from './pages/Investor';
 import UnderConstruction from './components/UnderConstruction';
+import Career from './pages/Career';
 
 
 function About() {
@@ -34,7 +35,7 @@ const App = () =>   {
           <Route path='/team' element={<UnderConstruction/>}/>
           <Route path='/baseStations' element={<UnderConstruction/>}/>
           <Route path='/payloads' element={<UnderConstruction/>}/>
-          <Route path='/careers' element={<UnderConstruction/>}/>
+          <Route path='/careers' element={<Career/>}/>
           <Route path='/news' element={<UnderConstruction/>}/>
         </Routes>
       <Footer />
