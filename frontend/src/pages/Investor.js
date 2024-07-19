@@ -1,10 +1,9 @@
 import React from 'react';
-// import InvestorBanner from '../components/InvestorBanner'; 
+
 import TechnologyInnovation from '../components/TechnologyInnovation'
 import Form from '../components/Form';
 import Header from '../components/Header';
 import HeaderImg from '../components/HeaderImg'
-import HeadTitle from  '../components/HeaderTitle';
 
 import investImg from '../assets/Investor.png';
  
@@ -15,14 +14,13 @@ function Investor() {
     <>
       <Header>
         <HeaderImg src={investImg} />
-          
-            <HeadTitle headTitle='A Better Future..' style={{top: '70%', left: '65%',  textWrap: 'nowrap'}}/>
-            <a className={bannerStyles.bottomRight} href='#contact-form' style={{top: '80%', left: '65%', color: 'aliceblue'}}>Built Together </a> 
-          
-          
-      
+        <section className={bannerStyles.textSection}>
+          <h1 className={bannerStyles.textTop}>A Better Future..</h1>
+          <a className={bannerStyles.bottomRight} href='#contact-form'>Built Together </a> 
+        </section>
+       
+
       </Header>
-      {/* <InvestorBanner />  */}
       <TechnologyInnovation/>
       <Form id='contact-form'/>
     </>
