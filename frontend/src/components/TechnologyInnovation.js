@@ -1,6 +1,5 @@
 import React from 'react';
-import TechStyles from './styles/TechStyles.module.css'; // Import your CSS module
-// import HeaderTitle from './HeaderTitle';
+import TechStyles from './styles/TechStyles.module.css';
 
 const TechnologyInnovation = () => {
   return (

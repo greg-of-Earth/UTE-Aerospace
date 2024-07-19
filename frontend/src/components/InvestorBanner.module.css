@@ -1,26 +1,25 @@
-.banner {
-    height: 800px; /* Adjust based on your layout */
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    color: white;
-  }
+.textSection {
+  top: 67%;
+  width: 95%;
+  position: absolute;
+  text-align: end;
+}
   
-  .topLeft {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    color: #1335D4;
+  .textTop {
+    margin: auto;
+    padding-right: 5%;
+    color: rgb(235, 184, 52);
     font-family: Inter;
     font-size: 64px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    position: relative;
     
   }
   
   .bottomRight {
-    position: absolute;
+   
     bottom: 20px;
     right: 20px;
    
@@ -38,17 +37,13 @@
   /* Responsive adjustments */
 @media (max-width: 1024px) {
   .topLeft, .bottomRight {
-      font-size: 48px; /* Smaller font size */
+      font-size: 48px;
   }
 }
 
 @media (max-width: 768px) {
 
   .topLeft, .bottomRight {
-    font-size: 24px; /* Smaller font size */
-}
-  .banner {
-      height: 600px; /* Adjust banner height */
+    font-size: 24px; 
   }
-  
 }
