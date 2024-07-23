@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import JobCard from '../components/JobCard';
 import styles from './styles/Career.module.css';
 
@@ -10,40 +11,49 @@ import softwareImage from '../assets/career.png'; // Make sure this is the corre
 const cardData = [
     {
         title: 'Aerospace Engineer',
-        imageUrl: careerImage,  // Refer to imported image variable
+        imageUrl: careerImage,
+        link: '/underConstruction' // Future custom link
     },
     {
         title: 'Mechanical Engineer',
-        imageUrl: mechanicalImage,  // Refer to imported image variable
+        imageUrl: mechanicalImage,
+        link: '/underConstruction' // Future custom link
     },
     {
         title: 'Software Developer',
-        imageUrl: softwareImage,  // Refer to imported image variable
+        imageUrl: softwareImage,
+        link: '/underConstruction' // Future custom link
     },
     // Add more job cards as needed
     {
         title: 'Electrical Engineer',
-        imageUrl: careerImage,  // Example addition
+        imageUrl: careerImage,
+        link: '/underConstruction' // Example addition
     },
     {
         title: 'Structural Engineer',
-        imageUrl: mechanicalImage,  // Example addition
+        imageUrl: mechanicalImage,
+        link: '/underConstruction' // Example addition
     },
     {
         title: 'Cyber Security',
-        imageUrl: softwareImage,  // Example addition
+        imageUrl: softwareImage,
+        link: '/underConstruction' // Example addition
     }
 ];
 
 const Career = () => {
+    const navigate = useNavigate();
+
     return (
-        <div className= {styles.career}>
+        <div className={styles.career}>
             {cardData.map((data, index) => (
                 <JobCard
                     key={index}
                     title={data.title}
                     imageUrl={data.imageUrl}
                     buttonText="Apply Now"
+                    onClick={() => navigate(data.link)}
                 />
             ))}
         </div>
@@ -51,4 +61,3 @@ const Career = () => {
 }
 
 export default Career;
-

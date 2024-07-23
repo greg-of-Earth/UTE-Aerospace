@@ -1,6 +1,6 @@
 .jobCard {
-    width: 507px; /* Fixed width for all cards */
-    height: 498px; /* Fixed height for all cards */
+    width: 30vw; /* Fixed width for all cards */
+    height: 30vw; /* Fixed height for all cards */
     flex-shrink: 0; /* Prevent the card from shrinking */
     background: #FFF; /* White background for the card */
     box-shadow: 4px 4px 7px 3px rgba(0, 0, 0, 0.40); /* Shadow effect */
@@ -14,30 +14,61 @@
 }
 
 .title {
-    font-size: 24px; /* Larger font size for the title */
+    font-size: 1.5vw; /* Relative font size for the title */
     font-weight: bold; /* Bold font weight for the title */
-    margin: 20px 0 10px; /* Margin around the title */
+    margin: 2vw 0 1vw; /* Margin around the title */
 }
 
 .image {
     width: 100%; /* Full width of the card */
-    height: calc(100% - 200px); /* Calculate height to leave space for button */
+    height: calc(100% - 8vw); /* Calculate height to leave space for button */
     object-fit: cover; /* Ensure the image covers the area without distortion */
 }
 
 .button {
-    width: 241px; /* Set fixed width */
-    height: 73px; /* Set fixed height */
+    width: 15vw; /* Adjusted width for the button */
+    height: 2vw; /* Adjusted height for the button */
     flex-shrink: 0; /* Prevent the button from shrinking */
     background: var(--Color, #095EF8); /* Use CSS variable for color, default to #095EF8 */
     color: white;
     border: none;
-    font-size: 16px;
+    font-size: 1vw; /* Relative font size */
     cursor: pointer;
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-transform: uppercase; /* Optional: makes text uppercase for better visibility */
-    margin-bottom: 20px; /* Margin at the bottom */
+    margin-bottom: 0.5vw; /* Margin at the bottom */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: box-shadow 0.3s ease; /* Smooth transition for the shadow */
+}
+
+.button:hover {
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); /* Slightly larger shadow on hover */
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .jobCard {
+        width: 80vw;
+        height: auto; /* Allow the height to adjust based on content */
+        margin: 10px; /* Adjust spacing around the card */
+    }
+
+    .title {
+        font-size: 4vw; /* Adjust font size for smaller screens */
+        margin: 4vw 0 2vw; /* Adjust margin */
+    }
+
+    .image {
+        height: auto; /* Allow image height to adjust based on content */
+    }
+
+    .button {
+        width: 30vw; /* Adjust width for smaller screens */
+        height: 8vw; /* Adjust height for smaller screens */
+        font-size: 2vw; /* Adjust font size for smaller screens */
+    }
 }
