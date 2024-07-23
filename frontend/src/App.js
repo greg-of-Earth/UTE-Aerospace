@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Model1 from './pages/Model1';
-
+import BaseStations from './pages/BaseStations';
 import Home from './pages/Home';
 import CompanyLeaders from './pages/CompanyLeaders';
 import Contact from './pages/Contact';
@@ -33,8 +33,7 @@ const App = () =>   {
           <Route path='/Contact' element={<Contact />} />
           <Route path='/investors' element={<Investor/>}/>
           <Route path='/team' element={<UnderConstruction/>}/>
-          <Route path='/baseStations' element={<UnderConstruction/>}/>
-          <Route path='/payloads' element={<UnderConstruction/>}/>
+          <Route path='/baseStations' element={<BaseStations/>}/>
           <Route path='/careers' element={<Career/>}/>
           <Route path='/news' element={<UnderConstruction/>}/>
         </Routes>
