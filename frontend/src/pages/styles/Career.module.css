@@ -4,3 +4,12 @@
     grid-gap: 10vw; /* Space between the cards */
     padding: 10vw;
 }
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .career {
+        grid-template-columns: 1fr; /* Change to a single column layout */
+        grid-gap: 5vw; /* Adjust gap between the cards */
+        padding: 5vw; /* Adjust padding */
+    }
+}

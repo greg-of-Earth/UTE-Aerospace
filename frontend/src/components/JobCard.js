@@ -8,14 +8,15 @@ const Button = ({ text, onClick }) => (
     </button>
 );
 
-const JobCard = ({ title, imageUrl, buttonText }) => {
+const JobCard = ({ title, imageUrl, buttonText, onClick }) => {
     return (
         <div className={styles.jobCard}>
             <h2 className={styles.title}>{title}</h2>
             <img src={imageUrl} alt={title} className={styles.image} />
-            <Button text={buttonText} onClick={() => alert("Applied!")} />
+            <Button text={buttonText} onClick={onClick} />
         </div>
     );
 }
 
 export default JobCard;
+
