@@ -1,15 +1,24 @@
-import stationStyle from './styles/BaseStations.module.css'
+import { useState } from 'react';
+import stationStyle from './styles/BaseStations.module.css';
 
-const StationTab = ( {title, description} ) => {
+const StationTab = ({ title, description }) => {
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  const handleClick = () => {
+    setIsFlipped(!isFlipped);
+  };
+
   return (
-    <>
-        <section className={stationStyle.descTitle}>
-            <h2>{title}</h2>
-        </section>
-        <section className={stationStyle.descInfo}>
-            <p>{description}</p>
-        </section>
-    </>
+    <div className={stationStyle.tabContainer} onClick={handleClick}>
+      <div className={`${stationStyle.tab} ${isFlipped ? stationStyle.flipped : ''}`}>
+        <section className={stationStyle.tabFront}>
+              <h2>{title}</h2>
+          </section>
+          <section className={stationStyle.tabBack}>
+              <p>{description}</p>
+          </section>
+      </div>
+    </div>
   )
 }
 
