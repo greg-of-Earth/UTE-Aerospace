@@ -1,13 +1,14 @@
 .textSection {
-  top: 67%;
+  top: 60%;
   width: 95%;
   position: absolute;
   text-align: end;
 }
   
   .textTop {
-    margin: auto;
+    margin: 0;
     padding-right: 5%;
+    padding-top:-5vw;
     color: rgb(235, 184, 52);
     font-family: Inter;
     font-size: 64px;
@@ -43,7 +44,44 @@
 
 @media (max-width: 768px) {
 
-  .topLeft, .bottomRight {
-    font-size: 24px; 
+  .textSection {
+    top: 70%;
+    width: 95%;
+    margin-right: 10px;
+    
+
+    
+    
   }
+    
+    .textTop {
+      margin: 0;
+     
+      padding-left: 30vw;
+      padding-top:-5vw;
+      color: rgb(235, 184, 52);
+      font-family: Inter;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    
+      
+    }
+    
+    .bottomRight {
+     
+      bottom: 20px;
+      right: 20px;
+     
+      color: #FFFEFE;
+     
+      font-family: Inter;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-decoration-line: underline;
+    }
+    
 }
