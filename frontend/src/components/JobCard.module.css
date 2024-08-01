@@ -1,6 +1,6 @@
 .jobCard {
     width: 30vw; /* Fixed width for all cards */
-    height: 30vw; /* Fixed height for all cards */
+    height: 35vw; /* Fixed height for all cards */
     flex-shrink: 0; /* Prevent the card from shrinking */
     background: #04423e;
     color: gold;
