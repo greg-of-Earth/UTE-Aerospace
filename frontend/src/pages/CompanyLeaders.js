@@ -16,7 +16,7 @@ const CompanyLeaders = () => {
       const subject = 'General Inquiry';
       const body = 'Hello, I am reaching out to discuss..\n\n';
 
-      const emailLink = `mailto:${daneEmail} mailto:${peteEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      const emailLink = `mailto:${daneEmail} mailto:${peteEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}` 
 
       window.location.href = emailLink;
   }
@@ -34,9 +34,11 @@ const CompanyLeaders = () => {
             width: '100%', height: '250px'}}/>
             <figcaption className={coLeaderStyles.caption}>
               <h2>Daniel Mayes</h2>
-              <span style={{display: 'block', marginBottom: '10px'}}>Owner/Manager</span>
+              <span >Owner/Manager</span>
               
-              <span style={{display: 'block',  cursor: 'pointer', color: '#ADD8E6', textDecoration: 'underline'}} onClick={() => email(daneEmail)}>daniel@uteaerospace.com</span>
+
+              <span style={{display: 'block',  cursor: 'pointer', color: 'white', textDecoration: 'underline'}} onClick={() => email(daneEmail)}>daniel@uteaerospace.com</span>
+
               <Link className={coLeaderStyles['bio-link']} to='/leaders/0'><br></br>Read Bio</Link>
             </figcaption>
           </figure>
@@ -47,7 +49,9 @@ const CompanyLeaders = () => {
             <figcaption className={coLeaderStyles.caption}>
               <h2>Pete Calderon</h2>
               <span style={{display: 'block', marginBottom: '10px'}}>Co-Owner/IPT Lead</span>
-              <span style={{display: 'block', cursor: 'pointer', color: '#ADD8E6', textDecoration: 'underline'}} onClick={() => email(peteEmail)}>pete@uteaerospace.com</span>
+
+              <span style={{display: 'block', cursor: 'pointer', color: 'white', textDecoration: 'underline'}} onClick={() => email(peteEmail)}>pete@uteaerospace.com</span>
+
               <Link className={coLeaderStyles['bio-link']} to='/leaders/1' ><br></br>Read Bio</Link>
             </figcaption>
           </figure>
