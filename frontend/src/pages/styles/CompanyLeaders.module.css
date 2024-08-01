@@ -11,7 +11,7 @@
     box-shadow: 5px 15px 15px 5px; 
     font-size:large;
     width: 30dvh; 
-    
+    background-color: #04423e;
 }
 
 .caption {
@@ -20,8 +20,19 @@
     text-align: center;
 }
 
+.caption h2 {
+    color: gold;
+}
+
+.caption span {
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+}
+
 .bio-link {
     font-size: 24px;
+    color: gold;
 }
 
 

@@ -6,7 +6,8 @@
   margin-bottom: 15vw;
   border: 1px solid black;
   box-shadow: 0 8px 8px rgba(0,0,0,035);
-  background-color: #E0F7FA;
+  background-color: #04423e;
+  color: gold;
 }
 
 
@@ -67,7 +68,7 @@
 
 .profile-card .content p {
   font-size: 22px;
-  color: black;
+  color: white;
   line-height: 1.5;
   
 }
