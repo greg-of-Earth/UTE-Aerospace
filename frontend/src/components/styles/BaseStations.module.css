@@ -1,6 +1,7 @@
 .tabContainer {
     margin-top: 15px;
     margin-bottom: 15px;
+    
 }
 
 .tab {
@@ -11,11 +12,17 @@
     cursor: pointer;
     transform-style: preserve-3d;
     transition: transform 2s;
+    background-color: #04423e;
 }
 
 .flipped {
     transform: rotateY(180deg);
 
+}
+
+.tabFront {
+    color: gold;
+    text-decoration: underline;
 }
 
 .tabFront, .tabBack {
@@ -40,4 +47,5 @@
     margin-left: 2%;
     margin-right: 2%;
     font-size: larger;
+    color: white;
 }
