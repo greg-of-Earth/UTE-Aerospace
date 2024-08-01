@@ -38,6 +38,7 @@
 #contact-table, #contact-table td {
   border: none;
   padding: 15px;
+  color: white;
 }
 
 #contact-table, #contact-table th {
@@ -49,7 +50,6 @@
   border-collapse: collapse;
   border-radius: 10px;
   padding: 15px;
-  color: gold;
 }
 
 .contact td {
