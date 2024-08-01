@@ -30,3 +30,14 @@
 .tab .tabBack {
     transform: rotateY(180deg);
 }
+
+.tabBack p{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    margin: auto;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: larger;
+}

@@ -7,7 +7,7 @@
 
 .why-ute-aerospace {
   text-align: left;
-  background-color: white;
+  background-color: #04423e;
   padding: 20px;
   box-shadow: -10px 10px 30px 0px rgba(0, 0, 0, 0.75);
   border-radius: 8px;
@@ -23,7 +23,7 @@
 }
 
 .why-ute-aerospace p {
-  color: #333;
+  color: white;
   font-family: 'Inter', sans-serif;
   font-size: 28px; /* Larger text for desktops */
   line-height: 1.6;
