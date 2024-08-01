@@ -2,7 +2,8 @@
     width: 30vw; /* Fixed width for all cards */
     height: 30vw; /* Fixed height for all cards */
     flex-shrink: 0; /* Prevent the card from shrinking */
-    background: #FFF; /* White background for the card */
+    background: #04423e;
+    color: gold;
     box-shadow: 4px 4px 7px 3px rgba(0, 0, 0, 0.40); /* Shadow effect */
     border-radius: 10px; /* Rounded corners */
     overflow: hidden; /* Ensures no overflow of content */
@@ -42,6 +43,8 @@
     margin-bottom: 0.5vw; /* Margin at the bottom */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Shadow effect */
     transition: box-shadow 0.3s ease; /* Smooth transition for the shadow */
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .button:hover {
