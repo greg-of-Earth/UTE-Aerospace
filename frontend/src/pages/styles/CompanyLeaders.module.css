@@ -11,17 +11,19 @@
     box-shadow: 5px 15px 15px 5px; 
     font-size:large;
     width: 30dvh; 
-    
+    background-color: #04423e;
 }
 
 .caption {
     flex: 1;
     margin-bottom: 25px;
     text-align: center;
+    color: gold;
 }
 
 .bio-link {
     font-size: 24px;
+    color: gold;
 }
 
 

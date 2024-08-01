@@ -27,7 +27,7 @@ const Form = ({ id }) => {
 
     return (
         <form id={id} className={formStyles['contact-form']} onSubmit={handleSubmit}>
-            <h4 style={{font:'20pt bolder', margin:'10px'}}>Request More Information</h4>
+            <h4 style={{font:'20pt bolder', margin:'10px', color:'gold'}}>Request More Information</h4>
             <input type="text" id="name" name="name" placeholder='Name' required/>
             <input type="text" id="email" name="email" placeholder='Email' required/><br/>
             <label htmlFor="reason">Select Reason For Contacting</label><br/>
