@@ -114,11 +114,11 @@ const Header = () => {
                         <p>Careers</p>
                     </NavLink>
                 </li>
-                <li className={navbarStyles['nav-item']}>
+                {/* <li className={navbarStyles['nav-item']}>
                     <NavLink to="/news" className={navbarStyles['nav-list']} style={{color: 'black', width: '100%'}} onClick= {closeDropdowns}>
                         <p>News</p>
                     </NavLink>
-                </li>
+                </li> */}
           </ul>
 
       </nav>
