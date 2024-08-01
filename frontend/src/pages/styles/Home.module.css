@@ -5,7 +5,6 @@
     top: 120%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
     text-align: center;
     font-size: 36pt;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -13,7 +12,7 @@
 }
 
 #overlay {
-    color: white;
+    color: gold;
     text-decoration: underline;
 }
 

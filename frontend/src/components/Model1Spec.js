@@ -58,7 +58,7 @@ function Model1Spec() {
     const activeBtn = buttons[sectionIndx];
     
     if(activeBtn) {
-      activeBtn.style.backgroundColor = 'lightgrey';
+      activeBtn.style.backgroundColor = '#04423e';
       activeBtn.style.boxShadow = '0px 0px 0px black';
     }
     
@@ -67,7 +67,7 @@ function Model1Spec() {
   useEffect(() => {
     const buttons = document.getElementsByClassName('tab');
     if (buttons[0]) {
-      buttons[0].style.backgroundColor = 'lightgrey';
+      buttons[0].style.backgroundColor = '#04423e';
       buttons[0].style.boxShadow = '0px 0px 0px black';
     }
   }, []);   
@@ -82,7 +82,8 @@ function Model1Spec() {
               borderRight: '2px solid black',
               borderLeft: '2px solid black',
               width: '25%',
-              backgroundColor: activeSection === indx ? 'green' : 'white',
+              color:  activeSection === indx ? 'gold' : 'black',
+              backgroundColor: activeSection === indx ? '#04423e' : 'white',
             }}
             key={indx}
             className={`model1SpecStyles.tab ${activeSection === indx ? model1SpecStyles.activeButton : ''}`}

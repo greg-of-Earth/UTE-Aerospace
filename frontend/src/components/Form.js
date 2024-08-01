@@ -38,6 +38,7 @@ const Form = ({ id }) => {
                 <option value="Research Opportunity">Investor Relations</option>
                 <option value="New Friend">Partnership Inquiry</option>
             </select>
+            <br></br>
             <input type="text" name="message" placeholder='Message'/>
             <button type="submit">Submit</button>
         </form>

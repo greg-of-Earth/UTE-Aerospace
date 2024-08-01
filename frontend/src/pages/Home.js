@@ -15,7 +15,7 @@ const Home = () => {
         if (video && overlay) {
             video.addEventListener('ended', () => {
                 console.log('Video ended');
-                text.style.color = 'white';
+                text.style.color = 'gold';
                 text.style.textDecoration = 'underline';
                 overlay.style.visibility = 'visible';
                 
@@ -37,7 +37,7 @@ const Home = () => {
     }, []);
 
     const handleJoinUsClick = () => {
-        navigate('/team'); // Use navigate function to redirect
+        navigate('/careers'); // Use navigate function to redirect
     };
 
     return (

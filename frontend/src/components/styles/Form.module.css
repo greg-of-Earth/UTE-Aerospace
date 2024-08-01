@@ -10,6 +10,11 @@
 
 }
 
+.contact-form select {
+    background-color: black;
+    font-size: 14pt;
+    color: white;
+}
 
 .contact-form h4, .contact-form label {
     color: gold;

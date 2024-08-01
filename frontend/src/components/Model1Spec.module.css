@@ -54,18 +54,23 @@
 
 .table-content {
   grid-column: 2; /* Table in the second column */
-  background: #f4f4f4; /* Background color for consistency */
+ 
   padding: 20px; /* Padding around the table */
   border-radius: 5px; /* Rounded corners for the table container */
   overflow-x: auto; /* Allows horizontal scrolling */
 }
 
 table {
+  background-color: #04423e;
+  color: white;
   width: 100%;
   table-layout: fixed; 
   border: 3px inset black;
 }
 
+th {
+  color: gold;
+}
 
 
 th, td {

@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import ProfileCard from '../components/ProfileCard'; 
 import Pete from '../assets/Pete.JPG';
-import Dan from '../assets/Dan.jpg';
+import Dan from '../assets/Dane.png';
 
 const profiles = [
   {
