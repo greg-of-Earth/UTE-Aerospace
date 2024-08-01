@@ -44,22 +44,28 @@
   border-right: none;
   border-left: none;
   border-top: none;
-  background-color: rgb(69, 122, 187);
+  background-color: #04423e;
   font-size: 24pt;
   border-collapse: collapse;
   border-radius: 10px;
   padding: 15px;
+  color: gold;
 }
 
-td {
+.contact td {
   font-size: 22pt;
   text-overflow: ellipsis;
   overflow: hidden;
+  color: white;
 }
 
 .right {
   text-align: right;
   margin: auto;
+}
+
+.right a{
+  color: white;
 }
 
 

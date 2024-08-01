@@ -22,7 +22,7 @@
   border: 2px solid black;
   padding: 2%;
   margin: 5%;
-  box-shadow: 0px 8px 2px 4px;
+  box-shadow: 0px 8px 2px 4px black;
   margin-bottom: 10%;
 }
 
@@ -37,18 +37,19 @@
 }
 
 .buttons:active {
-  background-color: lightgrey;
+  background-color: #04423e;
 }
 
 .info {
   font-size: 22pt;
-  box-shadow: 6px 6px 8px black;
+  /* box-shadow: 6px 6px 8px black; */
   /* height: 100%; */
-  background-color: lightgrey;
+  background-color: #04423e;
   display: flex;
   align-items: center;
   padding-left: 10%;
   padding-right: 10%;
+  color: white;
 }
 
 .table-content {
