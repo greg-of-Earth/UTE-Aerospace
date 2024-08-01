@@ -31,8 +31,11 @@ function Model1Spec() {
     },
     {
       title: 'Military',
-      content: (<ul className={model1SpecStyles.descList}><li>Assualt<p >In military operations, drones provide dynamic ground support through aerial machine gun attacks. These drones are deployed to engage ground targets from the air, offering cover and strategic advantages without sacrificing soldiers or manned aircraft.<br/><br/>
-        These drones can also be employed by the military for cost-effective area surveillance and tactical operations. For example, deploying small bombs on specific targets such as trucks. This capability is essential for maintaining continuous monitoring and executing precise strikes with minimal collateral damage. </p></li>
+      content: (<ul className={model1SpecStyles.descList}>
+
+
+{/* <li>Assualt<p >In military operations, drones provide dynamic ground support through aerial machine gun attacks. These drones are deployed to engage ground targets from the air, offering cover and strategic advantages without sacrificing soldiers or manned aircraft.<br/><br/>
+        These drones can also be employed by the military for cost-effective area surveillance and tactical operations. For example, deploying small bombs on specific targets such as trucks. This capability is essential for maintaining continuous monitoring and executing precise strikes with minimal collateral damage. </p></li> */}
         <li>Search And Rescue<p>Search and rescue operations employ drones equipped with thermal imaging to locate individuals by their heat signatures. Once targets are identified, these drones can also airdrop essential supplies directly to the location, providing immediate assistance in critical situations. 
         </p></li>
         <li>Coast Guard/ Navy<p>Drones can be employed by the Coast Guard and Navy for precision airdrops of fire retardant for fire containment on marine vessels. These drones can carry up to 30 - 55 gallons of retardant, which gives the crew a chance to respond quicker to emergency situations at sea. Potentially saving vessels and lives by controlling fires before they spread.
@@ -74,10 +77,23 @@ function Model1Spec() {
       <section className={model1SpecStyles.contents}>
         <div id="buttonList" className={model1SpecStyles.buttons}>
           {tabs.map((tab, indx) => (
+            <Link
+            style={{
+              borderRight: '2px solid black',
+              borderLeft: '2px solid black',
+              width: '25%',
+              backgroundColor: activeSection === indx ? 'green' : 'white',
+            }}
+            key={indx}
+            className={`model1SpecStyles.tab ${activeSection === indx ? model1SpecStyles.activeButton : ''}`}
+            onClick={() => showInfo(indx)}
+          >
+            {tab.title}
+          </Link>
           
 
-            <Link style={{borderRight: '2px solid black', borderLeft: '2px solid black', width: '25%', backgroundColor: activeSection === indx ? 'lightgrey' : 'white'}}
-            key={indx} className={`model1SpecStyles.tab ${activeSection === indx ? 'model1SpecStyles.active' : ''}`} onClick={() => showInfo(indx)}> {tab.title}</Link>
+            
+            
             
           ))}
         </div>

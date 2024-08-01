@@ -36,7 +36,9 @@ const CompanyLeaders = () => {
               <h2>Daniel Mayes</h2>
               <span >Owner/Manager</span>
               
+
               <span style={{display: 'block',  cursor: 'pointer', color: 'white', textDecoration: 'underline'}} onClick={() => email(daneEmail)}>daniel@uteaerospace.com</span>
+
               <Link className={coLeaderStyles['bio-link']} to='/leaders/0'><br></br>Read Bio</Link>
             </figcaption>
           </figure>
@@ -47,7 +49,9 @@ const CompanyLeaders = () => {
             <figcaption className={coLeaderStyles.caption}>
               <h2>Pete Calderon</h2>
               <span style={{display: 'block', marginBottom: '10px'}}>Co-Owner/IPT Lead</span>
+
               <span style={{display: 'block', cursor: 'pointer', color: 'white', textDecoration: 'underline'}} onClick={() => email(peteEmail)}>pete@uteaerospace.com</span>
+
               <Link className={coLeaderStyles['bio-link']} to='/leaders/1' ><br></br>Read Bio</Link>
             </figcaption>
           </figure>
