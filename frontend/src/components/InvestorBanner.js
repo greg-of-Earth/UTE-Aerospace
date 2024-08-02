@@ -1,5 +1,5 @@
 import React from 'react';
-import bannerStyles from './InvestorBanner.module.css';
+import bannerStyles from './styles/InvestorBanner.module.css';
 
 import backgroundImg from '../assets/Investor.png'; // Importing the image
 

@@ -7,7 +7,7 @@ import HeaderImg from '../components/HeaderImg'
 
 import investImg from '../assets/Investor.png';
  
-import bannerStyles from '../components/InvestorBanner.module.css';
+import bannerStyles from '../components/styles/InvestorBanner.module.css';
 
 function Investor() {
   return (

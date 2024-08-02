@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './JobCard.module.css'; // Import the styles
+import styles from './styles/JobCard.module.css'; // Import the styles
 
 // Assuming Button is a custom component
 const Button = ({ text, onClick }) => (

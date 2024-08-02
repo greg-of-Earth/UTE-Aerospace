@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import model1SpecStyles from "./Model1Spec.module.css"; // Ensure you have the CSS file in the same folder
-
+import model1SpecStyles from "./styles/Model1Spec.module.css"; 
 
 function Model1Spec() {
 
@@ -19,12 +18,12 @@ function Model1Spec() {
           <li>Farmers<p >Utilizes drones for precise and efficient spraying of fertilizers and pesticides with no scheduling delay. Thus, improving crop health and reducing chemical exposure.</p>
           </li>
           <li>Transport<p>This drone application focuses on transporting substantial loads, up to 300 pounds, to designated sites. The drones are designed for vertical take-off and landing, making them ideal for delivering supplies directly to remote or difficult to access areas, such as parking lots or unprepared fields.</p></li>
-        <li>Surveying/ Reconnaissance<p> Utilizes drones equipped with cameras and sensors to capture and transmit real-time data for surveying, urban planning, and disaster response.</p></li></ul>),
+        <li>Surveying + Reconnaissance<p> Utilizes drones equipped with cameras and sensors to capture and transmit real-time data for surveying, urban planning, and disaster response.</p></li></ul>),
     },
     {
       title: 'Emergency',
       content: (<ul className={model1SpecStyles.descList}><li>Forestry<p >Drones are deployed by the forestry service to create fire breaks efficiently. These unmanned aerial vehicles clear strips of vegetation to prevent the spread of wildfires by acting as barriers. This technique is essential in forest management, particularly in areas prone to frequent fires, enabling quicker, and safer fire control.</p></li>
-        <li>PoisonControlCenter<p>In emergencies involving venomous bites, a drone will be dispatched to deliver antivenom to victims located in areas that are hard to reach by traditional methods. This rapid delivery system reduces response times, potentially saving lives by ensuring timely medical assistance.
+        <li>Poison Control Center<p>In emergencies involving venomous bites, a drone will be dispatched to deliver antivenom to victims located in areas that are hard to reach by traditional methods. This rapid delivery system reduces response times, potentially saving lives by ensuring timely medical assistance.
         </p></li>
         
         </ul>),
@@ -38,7 +37,7 @@ function Model1Spec() {
         These drones can also be employed by the military for cost-effective area surveillance and tactical operations. For example, deploying small bombs on specific targets such as trucks. This capability is essential for maintaining continuous monitoring and executing precise strikes with minimal collateral damage. </p></li> */}
         <li>Search And Rescue<p>Search and rescue operations employ drones equipped with thermal imaging to locate individuals by their heat signatures. Once targets are identified, these drones can also airdrop essential supplies directly to the location, providing immediate assistance in critical situations. 
         </p></li>
-        <li>Coast Guard/ Navy<p>Drones can be employed by the Coast Guard and Navy for precision airdrops of fire retardant for fire containment on marine vessels. These drones can carry up to 30 - 55 gallons of retardant, which gives the crew a chance to respond quicker to emergency situations at sea. Potentially saving vessels and lives by controlling fires before they spread.
+        <li>Coast Guard + Navy<p>Drones can be employed by the Coast Guard and Navy for precision airdrops of fire retardant for fire containment on marine vessels. These drones can carry up to 30 - 55 gallons of retardant, which gives the crew a chance to respond quicker to emergency situations at sea. Potentially saving vessels and lives by controlling fires before they spread.
         </p></li>
         
         </ul>),
@@ -83,7 +82,7 @@ function Model1Spec() {
               borderLeft: '2px solid black',
               width: '25%',
               color:  activeSection === indx ? 'gold' : 'black',
-              backgroundColor: activeSection === indx ? '#04423e' : 'white',
+              backgroundColor: activeSection === indx ? '#04423e' : 'lightgrey',
             }}
             key={indx}
             className={`model1SpecStyles.tab ${activeSection === indx ? model1SpecStyles.activeButton : ''}`}
