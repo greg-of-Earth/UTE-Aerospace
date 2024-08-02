@@ -1,6 +1,6 @@
 import React from 'react';
-import Button from './Button';
-import styles from './JobCard.module.css'; // Ensure proper importing of CSS module
+
+import styles from './styles/JobCard.module.css'; // Ensure proper importing of CSS module
 
 const JobCard = ({ title, imageUrl, buttonText }) => {
     return (

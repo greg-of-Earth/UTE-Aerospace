@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import underConstructionStyles from './UnderConstruction.module.css';
+import underConstructionStyles from './styles/UnderConstruction.module.css';
 import construction from '../assets/abstract.png'
 import HeaderImg from './HeaderImg';
 import Header from '../components/Header';
@@ -48,7 +48,7 @@ return (
                     ? `${timeLeft.days}d ${timeLeft.hours}h ${timeLeft.minutes}m ${timeLeft.seconds}s`
                     : "EXPIRED"} */
                     loading 
-                        ? "Loading..."
+                        ? "Arriving Soon"
                         : timeLeft === "EXPIRED" 
                             ? "EXPIRED"
                             : `${timeLeft.days}d ${timeLeft.hours}h ${timeLeft.minutes}m ${timeLeft.seconds}s`
